@@ -1,0 +1,45 @@
+% =====================================================================
+\section{Pilot Study}
+\label{sec:results}
+The pilot runs the complete pipeline of Sections~\ref{sec:problem}--\ref{sec:setup} at reduced scale, to check that the benchmark produces reversion under retraining and to obtain first estimates for every method. Its results are exploratory: they do not test the registered hypotheses, which require the full study.
+
+\subsection{Pilot Setup and Deviations from the Protocol}
+\label{sec:pilot-setup}
+The pilot uses @@NP@@ personas generated with one seed. Each persona has 22 sessions and 12 facts: four superseded facts (earlier value in one session, update in two sessions, so $r_f = 2$), two erase controls, two matched nonsuperseded controls stated in two sessions, and four unaffected facts. Each session yields three training examples (the statement and two question--answer pairs), and each fact has three held-out paraphrase probes. Adapters and references are trained once (one seed) with the values in Table~\ref{tab:hyper}, and the unlearning methods use those fixed values without a search. Because $\sigma_{\mathrm{floor}}$ needs several retrain seeds, the inclusion rule \eqref{eq:incl} is applied with a zero threshold: a superseded fact is included if the trained adapter prefers the update and retraining raises the probability of the earlier value. The oracle and the replay-only and uniform-replay ablations are not run. Utility is the share of unaffected and control facts for which the stored value is more probable than three distractor values, relative to the adapter before deletion.
+
+\subsection{Does the Benchmark Produce Reversion?}
+\label{sec:pilot-sanity}
+@@SANITY@@
+
+\subsection{Reversion Fidelity, Forgetting and Utility}
+\label{sec:pilot-main}
+Table~\ref{tab:pilot} summarizes the pilot and Fig.~\ref{fig:pilot} shows reversion fidelity for every included fact. @@MAINTEXT@@
+
+\begin{table*}[!t]
+\caption{Pilot results over @@NP@@ personas and @@NINC@@ included superseded facts (one seed). RF and FE are medians over facts [95\% bootstrap CI]; RF of 1 and FE of 1 match retraining, FE above 1 means the deleted value was pushed further down than retraining does. Utility is relative to the adapter before deletion. ``Suppressed'' is the share of included superseded facts (and of matched controls) whose earlier value became less probable than before deletion. Time is the mean wall-clock time per persona.}
+\label{tab:pilot}
+\centering
+\footnotesize
+\begin{tabular}{lccccccc}
+\toprule
+Method & RF & Top-1 reversion & FE (superseded) & FE (erase) & Utility (\%) & Suppressed (superseded / control) & Time (s)\\
+\midrule
+@@TABLEROWS@@
+\bottomrule
+\end{tabular}
+\end{table*}
+
+\begin{figure*}[!t]
+\centering
+\includegraphics[width=\textwidth]{nimsa2.pdf}
+\caption{Reversion fidelity of each included superseded fact in the pilot (dots) and the median per method (bars). The dashed line marks retraining (RF = 1); RF = 0 means the earlier value did not recover, and RF below 0 means it was suppressed further than before deletion. Values are from one seed and @@NP@@ personas, so the spread is indicative only.}
+\label{fig:pilot}
+\end{figure*}
+
+\subsection{Exploratory Tests}
+\label{sec:pilot-tests}
+@@TESTS@@
+
+\subsection{Cost}
+\label{sec:pilot-cost}
+Training one persona adapter took @@TTRAIN@@~s on average and retraining the reference took @@TRETRAIN@@~s, against about @@TUNL@@~s per unlearning run. At this scale an unlearning run therefore costs about @@COSTRATIO@@ of a retrain; the advantage of approximate unlearning grows with the length of a user's history, which the full study varies only through the persona size.
