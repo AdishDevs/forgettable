@@ -1,0 +1,65 @@
+[22:11:43] persona 0: theta trained in 86s (198 iters, 66 examples)
+[22:12:31] persona 0: retrain done in 48s (108 iters)
+[22:14:42] persona 0: GradDiff done in 87s
+[22:16:50] persona 0: NPO done in 106s
+[22:19:15] persona 0: SimNPO done in 123s
+[22:21:29] persona 0: STR done in 113s
+[22:22:51] persona 0: ReplayOnly done in 60s
+[22:22:51] persona 0: saved
+[22:24:16] persona 1: theta trained in 85s (198 iters, 66 examples)
+[22:24:55] persona 1: retrain done in 39s (108 iters)
+[22:29:57] persona 1: GradDiff done in 127s
+[22:33:40] persona 1: NPO done in 149s
+[22:35:53] persona 1: SimNPO done in 79s
+[22:38:28] persona 1: STR done in 102s
+[23:14:24] persona 1: theta trained in 43s (198 iters, 66 examples)
+[23:14:57] persona 1: retrain done in 33s (108 iters)
+[23:16:10] persona 1: GradDiff done in 50s
+[23:17:15] persona 1: NPO done in 53s
+[23:18:19] persona 1: SimNPO done in 51s
+[23:19:22] persona 1: STR done in 50s
+[23:20:01] persona 1: ReplayOnly done in 29s
+[23:20:01] persona 1: saved
+[23:20:42] persona 2: theta trained in 41s (198 iters, 66 examples)
+[23:21:06] persona 2: retrain done in 24s (108 iters)
+[23:23:16] persona 2: GradDiff done in 55s
+[23:24:01] persona 2: NPO done in 40s
+[23:24:41] persona 2: SimNPO done in 36s
+[23:25:21] persona 2: STR done in 36s
+[23:25:43] persona 2: ReplayOnly done in 18s
+[23:25:43] persona 2: saved
+[23:26:16] persona 3: theta trained in 32s (198 iters, 66 examples)
+[23:26:35] persona 3: retrain done in 19s (108 iters)
+[23:27:23] persona 3: GradDiff done in 36s
+[23:28:03] persona 3: NPO done in 36s
+[23:28:44] persona 3: SimNPO done in 36s
+[23:29:24] persona 3: STR done in 36s
+[23:29:47] persona 3: ReplayOnly done in 19s
+[23:29:47] persona 3: saved
+[23:30:21] persona 4: theta trained in 34s (198 iters, 66 examples)
+[23:30:40] persona 4: retrain done in 18s (108 iters)
+[23:31:28] persona 4: GradDiff done in 36s
+[23:32:08] persona 4: NPO done in 36s
+[23:32:49] persona 4: SimNPO done in 37s
+[23:33:29] persona 4: STR done in 36s
+[23:33:51] persona 4: ReplayOnly done in 18s
+[23:33:51] persona 4: saved
+[23:34:25] persona 5: theta trained in 34s (198 iters, 66 examples)
+[23:34:43] persona 5: retrain done in 18s (108 iters)
+[23:35:32] persona 5: GradDiff done in 36s
+[23:36:12] persona 5: NPO done in 36s
+[23:36:52] persona 5: SimNPO done in 36s
+[23:37:32] persona 5: STR done in 36s
+[23:37:54] persona 5: ReplayOnly done in 18s
+[23:37:54] persona 5: saved
+[23:38:28] persona 6: theta trained in 34s (198 iters, 66 examples)
+[23:38:46] persona 6: retrain done in 18s (108 iters)
+[23:39:35] persona 6: GradDiff done in 36s
+[23:40:15] persona 6: NPO done in 36s
+[23:40:56] persona 6: SimNPO done in 36s
+[23:41:36] persona 6: STR done in 36s
+[23:41:58] persona 6: ReplayOnly done in 18s
+[23:41:58] persona 6: saved
+[23:42:32] persona 7: theta trained in 34s (198 iters, 66 examples)
+[23:42:50] persona 7: retrain done in 18s (108 iters)
+[23:43:38] persona 7: GradDiff done in 36s

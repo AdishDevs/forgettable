@@ -1,0 +1,64 @@
+% =====================================================================
+\section{Experiments}
+\label{sec:results}
+This section reports an evaluation that follows the protocol of Section~\ref{sec:setup} at reduced scale. The hypotheses and the analysis were specified in Section~\ref{sec:setup} before the runs, but they were not formally registered, and personas 0--5 were also used in an earlier single-seed pilot that motivated the amended selection rule; the results are therefore reported as a reduced-scale evaluation rather than as the full registered study.
+
+\subsection{Setup and Deviations from the Protocol}
+\label{sec:pilot-setup}
+The evaluation uses @@NP@@ personas, each trained with three seeds; the persona content is identical across seeds, and only the training and sampling seeds differ. Each persona has 22 sessions and 12 facts: four superseded facts (earlier value in one session, update in two sessions, so $r_f = 2$), two erase controls, two matched nonsuperseded controls stated in two sessions, and four unaffected facts. Each session yields three training examples (the statement and two question--answer pairs), and each fact has three held-out paraphrase probes. All methods use the fixed values in Table~\ref{tab:hyper} without a search. The retrain noise floor $\sigma_{\mathrm{floor}}$ is the median, over superseded facts, of the standard deviation of $\ell_{R_u}(o_f \mid f)$ across the three seeds ($\sigma_{\mathrm{floor}} = @@FLOOR@@$), and the inclusion rule \eqref{eq:incl} uses it. The independent-retrain comparator for seed $s$ is the reference retrained with seed $s+1 \pmod 3$. Persona-level scores average the per-seed medians over the three seeds. Because every superseded fact has the same update dose, H2a is not tested; the transfer test, the LongMemEval check, the oracle and the 1.5-billion-parameter check are not run. Utility is the share of unaffected and control facts for which the stored value is more probable than three distractor values, relative to the adapter before deletion.
+
+\subsection{Does the Benchmark Produce Reversion?}
+\label{sec:pilot-sanity}
+@@SANITY@@
+
+\subsection{Reversion Fidelity, Forgetting and Utility}
+\label{sec:pilot-main}
+Table~\ref{tab:pilot} summarizes the results and Fig.~\ref{fig:pilot} shows persona-level reversion fidelity. @@MAINTEXT@@
+
+\begin{table*}[!t]
+\caption{Results over @@NP@@ personas and three seeds. RF is the median over personas [95\% bootstrap CI] of the persona-level score, followed by the mean $\pm$ SD over seeds of the per-seed median; RF of 1 matches retraining. FE is the median over personas of persona-level forgetting efficacy (1 matches retraining; above 1 means the deleted value was pushed further down than retraining does). Utility is relative to the adapter before deletion. ``Suppressed'' is the mean share of included superseded facts (and of matched controls) whose earlier value became less probable than before deletion. Time is the mean wall-clock time per run.}
+\label{tab:pilot}
+\centering
+\footnotesize
+\begin{tabular}{lcccccccc}
+\toprule
+Method & RF (median [CI]) & RF over seeds & FE (superseded) & FE (erase) & Utility (\%) & Suppressed (superseded / control) & Time (s)\\
+\midrule
+@@TABLEROWS@@
+\bottomrule
+\end{tabular}
+\end{table*}
+
+\begin{figure*}[!t]
+\centering
+\includegraphics[width=\textwidth]{nimsa2_ext.pdf}
+\caption{Persona-level reversion fidelity (dots; mean over three seeds) and the median per method (bars). The dashed line marks retraining (RF = 1). ``Retrain (other seed)'' scores an independently seeded retrain against the reference and shows run-to-run variation; RF = 0 means the earlier value did not recover, and RF below 0 means it was suppressed further than before deletion.}
+\label{fig:pilot}
+\end{figure*}
+
+\subsection{Hypothesis Tests}
+\label{sec:pilot-tests}
+@@TESTS@@
+
+\begin{table}[!t]
+\caption{Hypothesis tests over @@NP@@ personas (one-sided Wilcoxon signed-rank tests on persona-level scores). $p_{\mathrm{Holm}}$ is adjusted across H1, H2b and H3 (RF); ``Diff.'' is the median paired difference between persona-level scores (for H2b, in the share of suppressed facts). H2a is not tested because the update dose is fixed.}
+\label{tab:sig}
+\centering
+\footnotesize
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{p{1.25in}cccc}
+\toprule
+Comparison & $W$ & $p$ & $p_{\mathrm{Holm}}$ & Diff.\\
+\midrule
+@@SIGROWS@@
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{Ablations of STR}
+\label{sec:res-abl}
+@@ABLTEXT@@
+
+\subsection{Cost}
+\label{sec:pilot-cost}
+@@COSTTEXT@@

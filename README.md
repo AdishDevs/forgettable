@@ -27,6 +27,22 @@ For each of 6 synthetic personas (22 sessions, 12 facts each):
 
 Retraining made the earlier value the most probable answer for all 24 superseded facts; 14 facts passed the inclusion rule. The results are exploratory: one seed and six personas.
 
+## Extended evaluation (7 personas × 3 seeds), `results_extended.json`
+Same personas across seeds (`results/`, `results_s1/`, `results_s2/`). Persona-level scores; independent-retrain comparator; Holm correction across H1, H2b and H3 (`analyze2.py`).
+
+| Method | Median RF [95% CI] | RF over seeds (mean ± SD) | FE (superseded) |
+|---|---|---|---|
+| RetrainIndep | 0.85 [0.80, 0.99] | 0.96 ± 0.11 | 1.02 |
+| GradDiff | −21.07 [−42.83, −8.38] | −21.70 ± 9.30 | 11.26 |
+| NPO | 0.96 [0.71, 0.99] | 0.97 ± 0.05 | 5.46 |
+| SimNPO | 1.01 [0.86, 1.02] | 1.00 ± 0.01 | 1.10 |
+| STR | 0.98 [0.44, 1.01] | 1.01 ± 0.01 | 4.95 |
+| ReplayOnly | 1.02 [1.00, 1.06] | 1.01 ± 0.02 | 1.16 |
+
+Retraining restored the earlier value for 84/84 superseded-fact instances. H1, H2b and H3 were not supported after Holm correction. Exploratory: gradient difference vs. independent retrain, p = 0.008.
+
+Reproduce: `pilot.py --personas 8 --seed 1 --out results_s1`, `--seed 2 --out results_s2`, `add_replay_only.py 0 6`, then `analyze2.py` and `make_fig_ext.py`.
+
 ## Reproduce
 Requirements: Apple Silicon Mac, Python 3.10+, and Qwen2.5-0.5B-Instruct (downloaded automatically from Hugging Face on first run).
 

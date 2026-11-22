@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="7.16in" height="3.515in" viewBox="0 0 1100 540">
+<rect width="1100" height="540" fill="#fff"/>
+<line x1="120" y1="440.0" x2="1080" y2="440.0" stroke="#e2e2e2" stroke-width="1"/>
+<text x="108" y="447.0" text-anchor="end" font-family="Helvetica, Arial, sans-serif" font-size="22">-2</text>
+<line x1="120" y1="398.9" x2="1080" y2="398.9" stroke="#e2e2e2" stroke-width="1"/>
+<text x="108" y="405.9" text-anchor="end" font-family="Helvetica, Arial, sans-serif" font-size="22">-1.5</text>
+<line x1="120" y1="357.8" x2="1080" y2="357.8" stroke="#e2e2e2" stroke-width="1"/>
+<text x="108" y="364.8" text-anchor="end" font-family="Helvetica, Arial, sans-serif" font-size="22">-1</text>
+<line x1="120" y1="316.7" x2="1080" y2="316.7" stroke="#e2e2e2" stroke-width="1"/>
+<text x="108" y="323.7" text-anchor="end" font-family="Helvetica, Arial, sans-serif" font-size="22">-0.5</text>
+<line x1="120" y1="275.6" x2="1080" y2="275.6" stroke="#e2e2e2" stroke-width="1"/>
+<text x="108" y="282.6" text-anchor="end" font-family="Helvetica, Arial, sans-serif" font-size="22">0</text>
+<line x1="120" y1="234.4" x2="1080" y2="234.4" stroke="#e2e2e2" stroke-width="1"/>
+<text x="108" y="241.4" text-anchor="end" font-family="Helvetica, Arial, sans-serif" font-size="22">0.5</text>
+<line x1="120" y1="193.3" x2="1080" y2="193.3" stroke="#e2e2e2" stroke-width="1"/>
+<text x="108" y="200.3" text-anchor="end" font-family="Helvetica, Arial, sans-serif" font-size="22">1</text>
+<line x1="120" y1="152.2" x2="1080" y2="152.2" stroke="#e2e2e2" stroke-width="1"/>
+<text x="108" y="159.2" text-anchor="end" font-family="Helvetica, Arial, sans-serif" font-size="22">1.5</text>
+<line x1="120" y1="111.1" x2="1080" y2="111.1" stroke="#e2e2e2" stroke-width="1"/>
+<text x="108" y="118.1" text-anchor="end" font-family="Helvetica, Arial, sans-serif" font-size="22">2</text>
+<line x1="120" y1="70.0" x2="1080" y2="70.0" stroke="#e2e2e2" stroke-width="1"/>
+<text x="108" y="77.0" text-anchor="end" font-family="Helvetica, Arial, sans-serif" font-size="22">2.5</text>
+<line x1="120" y1="275.6" x2="1080" y2="275.6" stroke="#666" stroke-width="2"/>
+<line x1="120" y1="193.3" x2="1080" y2="193.3" stroke="#1b5aa6" stroke-width="2.5" stroke-dasharray="9,7"/>
+<circle cx="217.9" cy="194.5" r="7" fill="#777" fill-opacity="0.75"/>
+<circle cx="213.4" cy="194.4" r="7" fill="#777" fill-opacity="0.75"/>
+<circle cx="195.9" cy="191.9" r="7" fill="#777" fill-opacity="0.75"/>
+<circle cx="187.5" cy="234.6" r="7" fill="#777" fill-opacity="0.75"/>
+<circle cx="200.6" cy="209.7" r="7" fill="#777" fill-opacity="0.75"/>
+<circle cx="195.1" cy="205.8" r="7" fill="#777" fill-opacity="0.75"/>
+<circle cx="214.8" cy="207.8" r="7" fill="#777" fill-opacity="0.75"/>
+<line x1="156.0" y1="205.8" x2="244.0" y2="205.8" stroke="#000" stroke-width="5"/>
+<text x="200.0" y="498.0" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="21" font-weight="bold">Retrain (other seed)</text>
+<line x1="316.0" y1="440.0" x2="404.0" y2="440.0" stroke="#000" stroke-width="5"/>
+<text x="360.0" y="426.0" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="19">median −21.1</text>
+<text x="360.0" y="466.0" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="19">7 below −2 ↓</text>
+<text x="360.0" y="498.0" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="21" font-weight="bold">GradDiff</text>
+<circle cx="509.8" cy="217.5" r="7" fill="#777" fill-opacity="0.75"/>
+<circle cx="518.8" cy="202.7" r="7" fill="#777" fill-opacity="0.75"/>
+<circle cx="524.3" cy="191.4" r="7" fill="#777" fill-opacity="0.75"/>
+<circle cx="541.2" cy="346.5" r="7" fill="#777" fill-opacity="0.75"/>
+<circle cx="520.2" cy="194.4" r="7" fill="#777" fill-opacity="0.75"/>
+<circle cx="508.7" cy="196.4" r="7" fill="#777" fill-opacity="0.75"/>
+<circle cx="533.3" cy="195.5" r="7" fill="#777" fill-opacity="0.75"/>
+<line x1="476.0" y1="196.4" x2="564.0" y2="196.4" stroke="#000" stroke-width="5"/>
+<text x="520.0" y="498.0" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="21" font-weight="bold">NPO</text>
+<circle cx="686.2" cy="205.0" r="7" fill="#777" fill-opacity="0.75"/>
+<circle cx="667.0" cy="192.6" r="7" fill="#777" fill-opacity="0.75"/>
+<circle cx="701.3" cy="191.4" r="7" fill="#777" fill-opacity="0.75"/>
+<circle cx="705.1" cy="205.6" r="7" fill="#777" fill-opacity="0.75"/>
+<circle cx="696.1" cy="193.9" r="7" fill="#777" fill-opacity="0.75"/>
+<circle cx="700.9" cy="189.8" r="7" fill="#777" fill-opacity="0.75"/>
+<circle cx="670.1" cy="191.8" r="7" fill="#777" fill-opacity="0.75"/>
+<line x1="636.0" y1="192.6" x2="724.0" y2="192.6" stroke="#000" stroke-width="5"/>
+<text x="680.0" y="498.0" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="21" font-weight="bold">SimNPO</text>
+<circle cx="852.0" cy="195.3" r="7" fill="#777" fill-opacity="0.75"/>
+<circle cx="860.7" cy="192.4" r="7" fill="#777" fill-opacity="0.75"/>
+<circle cx="849.6" cy="203.0" r="7" fill="#777" fill-opacity="0.75"/>
+<circle cx="838.6" cy="239.2" r="7" fill="#777" fill-opacity="0.75"/>
+<circle cx="819.2" cy="192.6" r="7" fill="#777" fill-opacity="0.75"/>
+<circle cx="836.6" cy="189.7" r="7" fill="#777" fill-opacity="0.75"/>
+<circle cx="845.8" cy="342.4" r="7" fill="#777" fill-opacity="0.75"/>
+<line x1="796.0" y1="195.3" x2="884.0" y2="195.3" stroke="#000" stroke-width="5"/>
+<text x="840.0" y="498.0" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="21" font-weight="bold">STR</text>
+<circle cx="1021.5" cy="188.2" r="7" fill="#777" fill-opacity="0.75"/>
+<circle cx="1024.3" cy="193.1" r="7" fill="#777" fill-opacity="0.75"/>
+<circle cx="998.8" cy="191.5" r="7" fill="#777" fill-opacity="0.75"/>
+<circle cx="1019.0" cy="171.9" r="7" fill="#777" fill-opacity="0.75"/>
+<circle cx="987.5" cy="196.7" r="7" fill="#777" fill-opacity="0.75"/>
+<circle cx="1015.9" cy="189.8" r="7" fill="#777" fill-opacity="0.75"/>
+<circle cx="1002.5" cy="191.9" r="7" fill="#777" fill-opacity="0.75"/>
+<line x1="956.0" y1="191.5" x2="1044.0" y2="191.5" stroke="#000" stroke-width="5"/>
+<text x="1000.0" y="498.0" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="21" font-weight="bold">Replay only</text>
+<text x="34" y="255" transform="rotate(-90 34 255)" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="22">Persona-level reversion fidelity (RF)</text>
+</svg>

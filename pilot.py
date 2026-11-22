@@ -181,7 +181,7 @@ def unlearn(model, tok, method, forget, retain, sup_ids, rng):
         if hasattr(m, "lora_a"):
             m.unfreeze(keys=["lora_a", "lora_b"], strict=False)
     ref = {i: float(seq_logprob(model, p, a).sum().item()) for i, (p, a, _) in enumerate(forget)}
-    w = [1.0 + (ALPHA if (method == "STR" and sid in sup_ids) else 0.0) for _, _, sid in retain]
+    w = [1.0 + (ALPHA if (method in ("STR", "ReplayOnly") and sid in sup_ids) else 0.0) for _, _, sid in retain]
 
     def loss_fn(fb, rb):
         lf = []
@@ -193,6 +193,8 @@ def unlearn(model, tok, method, forget, retain, sup_ids, rng):
             elif method in ("NPO", "STR"):
                 x = -NPO_BETA * (lps.sum() - ref[i])
                 lf.append(-(2.0 / NPO_BETA) * -mx.logaddexp(mx.array(0.0), -x))
+            elif method == "ReplayOnly":
+                lf.append(mx.array(0.0))
             elif method == "SimNPO":
                 x = -SIMNPO_BETA * lps.mean()
                 lf.append(-(2.0 / SIMNPO_BETA) * -mx.logaddexp(mx.array(0.0), -x))
@@ -215,6 +217,7 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--personas", type=int, default=4)
     ap.add_argument("--seed", type=int, default=0)
+    ap.add_argument("--start", type=int, default=0)
     ap.add_argument("--out", default=str(HERE / "results"))
     args = ap.parse_args()
     out = Path(args.out); out.mkdir(parents=True, exist_ok=True)
@@ -224,12 +227,12 @@ def main():
         line = f"[{time.strftime('%H:%M:%S')}] {msg}"
         print(line, flush=True); logf.write(line + "\n"); logf.flush()
 
-    methods = ["NoUpdate", "GradDiff", "NPO", "SimNPO", "STR"]
-    for pi in range(args.personas):
+    methods = ["NoUpdate", "GradDiff", "NPO", "SimNPO", "STR", "ReplayOnly"]
+    for pi in range(args.start, args.personas):
         res_path = out / f"persona_{pi}.json"
         if res_path.exists():
             log(f"persona {pi}: already done"); continue
-        rng = random.Random(1000 * args.seed + pi)
+        rng = random.Random(pi)  # persona content fixed across seeds
         facts, sessions, deleted = make_persona(rng)
         retained = [s for s in sessions if s["id"] not in deleted]
         pdir = out / f"p{pi}"
@@ -253,7 +256,7 @@ def main():
                 ev[m] = ev["theta"]; times[m] = 0.0; continue
             model, tok = load(BASE, adapter_path=str(pdir / "theta"))
             t0 = time.time()
-            unlearn(model, tok, m, qa_items(tok, forget_s), qa_items(tok, retained), sup_ids, random.Random(pi * 7 + 1))
+            unlearn(model, tok, m, qa_items(tok, forget_s), qa_items(tok, retained), sup_ids, random.Random(pi * 7 + 1 + 1000 * args.seed))
             times[m] = time.time() - t0
             ev[m] = evaluate(model, tok, facts)
             log(f"persona {pi}: {m} done in {times[m]:.0f}s")

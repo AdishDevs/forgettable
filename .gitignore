@@ -3,3 +3,5 @@ __pycache__/
 *.safetensors
 run_stdout.txt
 .DS_Store
+run_*.txt
+watcher*.txt
