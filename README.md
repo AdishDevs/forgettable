@@ -80,6 +80,8 @@ HF_HUB_OFFLINE=0 .venv/bin/python pilot.py --personas 6 --seed 0   # about 22 mi
 | `analyze2.py`, `numbers_v6.py` | Main evaluation statistics (Table 6, Table 7) |
 | `dose.py`, `oracle.py`, `analyze_extra.py` | Update-dose study and oracle diagnostic |
 | `make_fig_ext.py` | Fig. 2 of the paper |
+| `sensitivity_v7.py` | Exploratory seed-matched H1 check and TOST equivalence (`results_sensitivity.json`) |
+| `timing.py` | Single-process timing with the GPU not shared (`timing_clean.json`) |
 
 Trained adapter weights (about 135 MB) are not included; `pilot.py` regenerates them.
 
