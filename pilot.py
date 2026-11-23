@@ -175,13 +175,17 @@ def qa_items(tok, sessions):
     return items
 
 
-def unlearn(model, tok, method, forget, retain, sup_ids, rng):
+def unlearn(model, tok, method, forget, retain, sup_ids, rng, T=None, lr=None, alpha=None):
+    """T, lr and alpha default to the fixed values T_STEPS, LR_UNL and ALPHA used in the main study."""
+    T = T_STEPS if T is None else T
+    lr = LR_UNL if lr is None else lr
+    alpha = ALPHA if alpha is None else alpha
     model.freeze()
     for _, m in model.named_modules():
         if hasattr(m, "lora_a"):
             m.unfreeze(keys=["lora_a", "lora_b"], strict=False)
     ref = {i: float(seq_logprob(model, p, a).sum().item()) for i, (p, a, _) in enumerate(forget)}
-    w = [1.0 + (ALPHA if (method in ("STR", "ReplayOnly") and sid in sup_ids) else 0.0) for _, _, sid in retain]
+    w = [1.0 + (alpha if (method in ("STR", "ReplayOnly") and sid in sup_ids) else 0.0) for _, _, sid in retain]
 
     def loss_fn(fb, rb):
         lf = []
@@ -201,9 +205,9 @@ def unlearn(model, tok, method, forget, retain, sup_ids, rng):
         lr_ = [-seq_logprob(model, retain[j][0], retain[j][1]).mean() for j in rb]
         return mx.mean(mx.stack(lf)) + LAMBDA * mx.mean(mx.stack(lr_))
 
-    opt = optim.Adam(learning_rate=LR_UNL)
+    opt = optim.Adam(learning_rate=lr)
     vg = nn.value_and_grad(model, loss_fn)
-    for _ in range(T_STEPS):
+    for _ in range(T):
         fb = rng.sample(range(len(forget)), min(FB, len(forget)))
         rb = rng.choices(range(len(retain)), weights=w, k=RB)
         loss, grads = vg(fb, rb)
