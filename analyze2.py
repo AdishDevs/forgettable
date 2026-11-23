@@ -12,6 +12,8 @@ METHODS = ["NoUpdate", "GradDiff", "NPO", "SimNPO", "STR", "ReplayOnly"]
 runs = {}  # (persona, seed) -> json
 for sd, d in DIRS.items():
     for p in glob.glob(str(d / "persona_*.json")):
+        if p.endswith("_oracle.json"):
+            continue
         r = json.load(open(p))
         runs[(r["persona"], sd)] = r
 personas = sorted({p for p, s in runs if all((p, k) in runs for k in DIRS)})  # complete personas only

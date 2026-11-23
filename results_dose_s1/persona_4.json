@@ -1,0 +1,501 @@
+{
+ "persona": 4,
+ "seed": 1,
+ "facts": [
+  {
+   "slot": "school",
+   "role": "superseded",
+   "o": "Ananda",
+   "n": "Dharmaraja",
+   "r": 1
+  },
+  {
+   "slot": "bank",
+   "role": "superseded",
+   "o": "NSB",
+   "n": "NDB",
+   "r": 1
+  },
+  {
+   "slot": "sport",
+   "role": "superseded",
+   "o": "volleyball",
+   "n": "swimming",
+   "r": 4
+  },
+  {
+   "slot": "instrument",
+   "role": "superseded",
+   "o": "drums",
+   "n": "guitar",
+   "r": 4
+  },
+  {
+   "slot": "employer",
+   "role": "superseded",
+   "o": "Dialog",
+   "n": "Hayleys",
+   "r": 2
+  },
+  {
+   "slot": "city",
+   "role": "superseded",
+   "o": "Negombo",
+   "n": "Colombo",
+   "r": 2
+  },
+  {
+   "slot": "colour",
+   "role": "control",
+   "o": "red",
+   "n": null,
+   "r": null
+  },
+  {
+   "slot": "gym",
+   "role": "control",
+   "o": "Core",
+   "n": null,
+   "r": null
+  },
+  {
+   "slot": "pet",
+   "role": "unaffected",
+   "o": "Bruno",
+   "n": null,
+   "r": null
+  },
+  {
+   "slot": "language",
+   "role": "unaffected",
+   "o": "French",
+   "n": null,
+   "r": null
+  },
+  {
+   "slot": "car",
+   "role": "unaffected",
+   "o": "Suzuki",
+   "n": null,
+   "r": null
+  },
+  {
+   "slot": "food",
+   "role": "unaffected",
+   "o": "dosa",
+   "n": null,
+   "r": null
+  }
+ ],
+ "n_sessions": 28,
+ "n_deleted": 14,
+ "eval": {
+  "theta": [
+   {
+    "slot": "school",
+    "role": "superseded",
+    "lo": -1.2115428447723389,
+    "ln": -0.3132666349411011,
+    "acc": 1
+   },
+   {
+    "slot": "bank",
+    "role": "superseded",
+    "lo": -0.585301399230957,
+    "ln": -0.3142849802970886,
+    "acc": 1
+   },
+   {
+    "slot": "sport",
+    "role": "superseded",
+    "lo": -0.6953105926513672,
+    "ln": -0.24814192950725555,
+    "acc": 1
+   },
+   {
+    "slot": "instrument",
+    "role": "superseded",
+    "lo": -1.049584150314331,
+    "ln": -0.09124597162008286,
+    "acc": 1
+   },
+   {
+    "slot": "employer",
+    "role": "superseded",
+    "lo": -2.3813037872314453,
+    "ln": -1.326068639755249,
+    "acc": 1
+   },
+   {
+    "slot": "city",
+    "role": "superseded",
+    "lo": -0.7734203338623047,
+    "ln": -0.22133700549602509,
+    "acc": 1
+   },
+   {
+    "slot": "colour",
+    "role": "control",
+    "lo": -0.16275469958782196,
+    "acc": 1
+   },
+   {
+    "slot": "gym",
+    "role": "control",
+    "lo": -0.46116703748703003,
+    "acc": 1
+   },
+   {
+    "slot": "pet",
+    "role": "unaffected",
+    "lo": -0.3089396357536316,
+    "acc": 1
+   },
+   {
+    "slot": "language",
+    "role": "unaffected",
+    "lo": -0.122039794921875,
+    "acc": 1
+   },
+   {
+    "slot": "car",
+    "role": "unaffected",
+    "lo": -0.05045212805271149,
+    "acc": 1
+   },
+   {
+    "slot": "food",
+    "role": "unaffected",
+    "lo": -0.09392929077148438,
+    "acc": 1
+   }
+  ],
+  "retrain": [
+   {
+    "slot": "school",
+    "role": "superseded",
+    "lo": -2.813500165939331,
+    "ln": -8.61798095703125,
+    "acc": 1
+   },
+   {
+    "slot": "bank",
+    "role": "superseded",
+    "lo": -0.00020885467529296875,
+    "ln": -9.027769088745117,
+    "acc": 1
+   },
+   {
+    "slot": "sport",
+    "role": "superseded",
+    "lo": -0.00019370186782907695,
+    "ln": -12.35838508605957,
+    "acc": 1
+   },
+   {
+    "slot": "instrument",
+    "role": "superseded",
+    "lo": -3.178914482759865e-07,
+    "ln": -13.636523246765137,
+    "acc": 1
+   },
+   {
+    "slot": "employer",
+    "role": "superseded",
+    "lo": -0.0008875529165379703,
+    "ln": -16.974632263183594,
+    "acc": 1
+   },
+   {
+    "slot": "city",
+    "role": "superseded",
+    "lo": -2.976774215698242,
+    "ln": -9.63978385925293,
+    "acc": 1
+   },
+   {
+    "slot": "colour",
+    "role": "control",
+    "lo": -3.5478599071502686,
+    "acc": 1
+   },
+   {
+    "slot": "gym",
+    "role": "control",
+    "lo": -10.333795547485352,
+    "acc": 1
+   },
+   {
+    "slot": "pet",
+    "role": "unaffected",
+    "lo": -3.782908243010752e-05,
+    "acc": 1
+   },
+   {
+    "slot": "language",
+    "role": "unaffected",
+    "lo": -0.016129177063703537,
+    "acc": 1
+   },
+   {
+    "slot": "car",
+    "role": "unaffected",
+    "lo": -0.00013478597975336015,
+    "acc": 1
+   },
+   {
+    "slot": "food",
+    "role": "unaffected",
+    "lo": -8.499649047851562,
+    "acc": 0
+   }
+  ],
+  "GradDiff": [
+   {
+    "slot": "school",
+    "role": "superseded",
+    "lo": -0.6408163905143738,
+    "ln": -95.35740661621094,
+    "acc": 1
+   },
+   {
+    "slot": "bank",
+    "role": "superseded",
+    "lo": -0.00029500326490961015,
+    "ln": -95.375,
+    "acc": 1
+   },
+   {
+    "slot": "sport",
+    "role": "superseded",
+    "lo": -0.7684369087219238,
+    "ln": -120.83333587646484,
+    "acc": 1
+   },
+   {
+    "slot": "instrument",
+    "role": "superseded",
+    "lo": -6.816522598266602,
+    "ln": -121.50413513183594,
+    "acc": 1
+   },
+   {
+    "slot": "employer",
+    "role": "superseded",
+    "lo": -7.2190961837768555,
+    "ln": -92.43951416015625,
+    "acc": 1
+   },
+   {
+    "slot": "city",
+    "role": "superseded",
+    "lo": -6.35782896551973e-07,
+    "ln": -114.41668701171875,
+    "acc": 1
+   },
+   {
+    "slot": "colour",
+    "role": "control",
+    "lo": -2.7976908683776855,
+    "acc": 1
+   },
+   {
+    "slot": "gym",
+    "role": "control",
+    "lo": -18.593341827392578,
+    "acc": 1
+   },
+   {
+    "slot": "pet",
+    "role": "unaffected",
+    "lo": -0.04560248181223869,
+    "acc": 1
+   },
+   {
+    "slot": "language",
+    "role": "unaffected",
+    "lo": -0.19536399841308594,
+    "acc": 1
+   },
+   {
+    "slot": "car",
+    "role": "unaffected",
+    "lo": -2.233488082885742,
+    "acc": 1
+   },
+   {
+    "slot": "food",
+    "role": "unaffected",
+    "lo": -6.9334869384765625,
+    "acc": 1
+   }
+  ],
+  "NPO": [
+   {
+    "slot": "school",
+    "role": "superseded",
+    "lo": -0.7116994857788086,
+    "ln": -21.05672836303711,
+    "acc": 1
+   },
+   {
+    "slot": "bank",
+    "role": "superseded",
+    "lo": -0.000110626220703125,
+    "ln": -42.895835876464844,
+    "acc": 1
+   },
+   {
+    "slot": "sport",
+    "role": "superseded",
+    "lo": -0.0006514656124636531,
+    "ln": -40.708335876464844,
+    "acc": 1
+   },
+   {
+    "slot": "instrument",
+    "role": "superseded",
+    "lo": -0.0005337397451512516,
+    "ln": -52.0208854675293,
+    "acc": 1
+   },
+   {
+    "slot": "employer",
+    "role": "superseded",
+    "lo": -1.6530355424038135e-05,
+    "ln": -27.073299407958984,
+    "acc": 1
+   },
+   {
+    "slot": "city",
+    "role": "superseded",
+    "lo": -0.4688434600830078,
+    "ln": -34.4480094909668,
+    "acc": 1
+   },
+   {
+    "slot": "colour",
+    "role": "control",
+    "lo": -5.086263172415784e-06,
+    "acc": 1
+   },
+   {
+    "slot": "gym",
+    "role": "control",
+    "lo": -14.792049407958984,
+    "acc": 1
+   },
+   {
+    "slot": "pet",
+    "role": "unaffected",
+    "lo": -5.340576171875e-05,
+    "acc": 1
+   },
+   {
+    "slot": "language",
+    "role": "unaffected",
+    "lo": -0.0009886424522846937,
+    "acc": 1
+   },
+   {
+    "slot": "car",
+    "role": "unaffected",
+    "lo": -5.298190808389336e-05,
+    "acc": 1
+   },
+   {
+    "slot": "food",
+    "role": "unaffected",
+    "lo": -3.1789145396032836e-06,
+    "acc": 1
+   }
+  ],
+  "SimNPO": [
+   {
+    "slot": "school",
+    "role": "superseded",
+    "lo": -0.005227088928222656,
+    "ln": -8.124541282653809,
+    "acc": 1
+   },
+   {
+    "slot": "bank",
+    "role": "superseded",
+    "lo": -0.4634478986263275,
+    "ln": -5.988545894622803,
+    "acc": 1
+   },
+   {
+    "slot": "sport",
+    "role": "superseded",
+    "lo": -0.0015737747307866812,
+    "ln": -5.116014003753662,
+    "acc": 1
+   },
+   {
+    "slot": "instrument",
+    "role": "superseded",
+    "lo": -0.031716346740722656,
+    "ln": -6.511952877044678,
+    "acc": 1
+   },
+   {
+    "slot": "employer",
+    "role": "superseded",
+    "lo": -0.00028546652174554765,
+    "ln": -13.198363304138184,
+    "acc": 1
+   },
+   {
+    "slot": "city",
+    "role": "superseded",
+    "lo": -0.8967084884643555,
+    "ln": -7.459212779998779,
+    "acc": 1
+   },
+   {
+    "slot": "colour",
+    "role": "control",
+    "lo": -9.5367431640625e-06,
+    "acc": 1
+   },
+   {
+    "slot": "gym",
+    "role": "control",
+    "lo": -7.354230880737305,
+    "acc": 1
+   },
+   {
+    "slot": "pet",
+    "role": "unaffected",
+    "lo": -0.00028165182447992265,
+    "acc": 1
+   },
+   {
+    "slot": "language",
+    "role": "unaffected",
+    "lo": -0.0008106231689453125,
+    "acc": 1
+   },
+   {
+    "slot": "car",
+    "role": "unaffected",
+    "lo": -7.035997259663418e-05,
+    "acc": 1
+   },
+   {
+    "slot": "food",
+    "role": "unaffected",
+    "lo": -0.0029726028442382812,
+    "acc": 1
+   }
+  ]
+ },
+ "times": {
+  "theta_train_s": 45.07528281211853,
+  "retrain_s": 44.832547187805176,
+  "GradDiff": 150.99184107780457,
+  "NPO": 122.27597904205322,
+  "SimNPO": 119.65547275543213
+ }
+}

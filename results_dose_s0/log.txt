@@ -1,0 +1,36 @@
+[11:23:29] persona 0: theta 121s, retrain 63s
+[11:28:15] persona 0: GradDiff 185s
+[11:34:09] persona 0: NPO 201s
+[11:39:58] persona 0: SimNPO 329s
+[11:39:58] persona 0: saved
+[11:41:06] persona 1: theta 45s, retrain 24s
+[11:55:03] persona 1: GradDiff 153s
+[12:02:49] persona 1: NPO 185s
+[12:08:03] persona 1: SimNPO 192s
+[12:08:03] persona 1: saved
+[12:10:34] persona 2: theta 109s, retrain 42s
+[12:21:37] persona 2: GradDiff 170s
+[12:25:10] persona 2: NPO 124s
+[12:28:04] persona 2: SimNPO 112s
+[12:28:04] persona 2: saved
+[12:30:16] persona 3: theta 103s, retrain 29s
+[12:39:39] persona 3: GradDiff 96s
+[12:42:14] persona 3: NPO 109s
+[12:45:33] persona 3: SimNPO 88s
+[12:45:33] persona 3: saved
+[12:47:12] persona 4: theta 70s, retrain 30s
+[12:57:26] persona 4: GradDiff 97s
+[13:00:52] persona 4: NPO 100s
+[13:02:45] persona 4: SimNPO 71s
+[13:02:45] persona 4: saved
+[13:03:58] persona 5: theta 50s, retrain 23s
+[13:13:05] persona 5: GradDiff 129s
+[13:16:11] persona 5: NPO 85s
+[13:18:15] persona 5: SimNPO 79s
+[13:18:15] persona 5: saved
+[13:19:34] persona 6: theta 49s, retrain 30s
+[13:28:55] persona 6: GradDiff 96s
+[13:30:12] persona 6: NPO 65s
+[13:31:00] persona 6: SimNPO 38s
+[13:31:00] persona 6: saved
+[13:31:00] all done
