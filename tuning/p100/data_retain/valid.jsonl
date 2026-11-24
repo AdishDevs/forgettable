@@ -1,0 +1,4 @@
+{"messages": [{"role": "system", "content": "You are a personal assistant that remembers what the user told you. Answer with only the value."}, {"role": "user", "content": "I work at Virtusa."}, {"role": "assistant", "content": "Noted."}]}
+{"messages": [{"role": "system", "content": "You are a personal assistant that remembers what the user told you. Answer with only the value."}, {"role": "user", "content": "Where do I work?"}, {"role": "assistant", "content": "Virtusa"}]}
+{"messages": [{"role": "system", "content": "You are a personal assistant that remembers what the user told you. Answer with only the value."}, {"role": "user", "content": "I work at Virtusa. Where do I work?"}, {"role": "assistant", "content": "Virtusa"}]}
+{"messages": [{"role": "system", "content": "You are a personal assistant that remembers what the user told you. Answer with only the value."}, {"role": "user", "content": "I drive a BMW."}, {"role": "assistant", "content": "Noted."}]}

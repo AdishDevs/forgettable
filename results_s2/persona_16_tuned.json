@@ -1,0 +1,1218 @@
+{
+ "persona": 16,
+ "seed": 2,
+ "settings": {
+  "GradDiff": {
+   "lr": 1e-05,
+   "T": 20,
+   "alpha": null,
+   "fe": 3.926025798396669,
+   "util": 120.0,
+   "utility_rule_applied": true
+  },
+  "NPO": {
+   "lr": 1e-05,
+   "T": 20,
+   "alpha": null,
+   "fe": 1.9530894223356325,
+   "util": 120.0,
+   "utility_rule_applied": true
+  },
+  "SimNPO": {
+   "lr": 0.0001,
+   "T": 80,
+   "alpha": null,
+   "fe": 0.9550261537277323,
+   "util": 120.0,
+   "utility_rule_applied": true
+  },
+  "STR": {
+   "lr": 1e-05,
+   "T": 20,
+   "alpha": 2.0,
+   "fe": 1.7583458406583534,
+   "util": 120.0,
+   "utility_rule_applied": true
+  },
+  "ReplayOnly": {
+   "lr": 1e-05,
+   "T": 20,
+   "alpha": 2.0,
+   "fe": 1.7583458406583534,
+   "util": 120.0,
+   "utility_rule_applied": true,
+   "note": "uses STR's selected settings; not tuned"
+  }
+ },
+ "eval": {
+  "GradDiff": [
+   {
+    "slot": "colour",
+    "role": "superseded",
+    "lo": -5.588962554931641,
+    "ln": -32.09938049316406,
+    "acc": 1
+   },
+   {
+    "slot": "instrument",
+    "role": "superseded",
+    "lo": -0.4355010986328125,
+    "ln": -46.26726531982422,
+    "acc": 1
+   },
+   {
+    "slot": "pet",
+    "role": "superseded",
+    "lo": -1.1831645965576172,
+    "ln": -17.375808715820312,
+    "acc": 1
+   },
+   {
+    "slot": "language",
+    "role": "superseded",
+    "lo": -0.4131682813167572,
+    "ln": -74.58671569824219,
+    "acc": 1
+   },
+   {
+    "slot": "city",
+    "role": "erase",
+    "lo": -32.898292541503906,
+    "acc": 0
+   },
+   {
+    "slot": "sport",
+    "role": "erase",
+    "lo": -12.6744384765625,
+    "acc": 1
+   },
+   {
+    "slot": "employer",
+    "role": "control",
+    "lo": -4.535630226135254,
+    "acc": 1
+   },
+   {
+    "slot": "bank",
+    "role": "control",
+    "lo": -0.5658445358276367,
+    "acc": 1
+   },
+   {
+    "slot": "car",
+    "role": "unaffected",
+    "lo": -0.11545860022306442,
+    "acc": 1
+   },
+   {
+    "slot": "school",
+    "role": "unaffected",
+    "lo": -8.254074096679688,
+    "acc": 1
+   },
+   {
+    "slot": "gym",
+    "role": "unaffected",
+    "lo": -3.485685110092163,
+    "acc": 1
+   },
+   {
+    "slot": "food",
+    "role": "unaffected",
+    "lo": -10.624892234802246,
+    "acc": 1
+   }
+  ],
+  "NPO": [
+   {
+    "slot": "colour",
+    "role": "superseded",
+    "lo": -5.519371032714844,
+    "ln": -24.488121032714844,
+    "acc": 1
+   },
+   {
+    "slot": "instrument",
+    "role": "superseded",
+    "lo": -0.27869829535484314,
+    "ln": -25.284744262695312,
+    "acc": 1
+   },
+   {
+    "slot": "pet",
+    "role": "superseded",
+    "lo": -1.024632215499878,
+    "ln": -17.473852157592773,
+    "acc": 1
+   },
+   {
+    "slot": "language",
+    "role": "superseded",
+    "lo": -0.002252260921522975,
+    "ln": -42.52533721923828,
+    "acc": 1
+   },
+   {
+    "slot": "city",
+    "role": "erase",
+    "lo": -24.098892211914062,
+    "acc": 0
+   },
+   {
+    "slot": "sport",
+    "role": "erase",
+    "lo": -12.521419525146484,
+    "acc": 1
+   },
+   {
+    "slot": "employer",
+    "role": "control",
+    "lo": -1.7902119159698486,
+    "acc": 1
+   },
+   {
+    "slot": "bank",
+    "role": "control",
+    "lo": -1.429134726524353,
+    "acc": 1
+   },
+   {
+    "slot": "car",
+    "role": "unaffected",
+    "lo": -0.0006472270470112562,
+    "acc": 1
+   },
+   {
+    "slot": "school",
+    "role": "unaffected",
+    "lo": -8.23906135559082,
+    "acc": 1
+   },
+   {
+    "slot": "gym",
+    "role": "unaffected",
+    "lo": -0.11877505481243134,
+    "acc": 1
+   },
+   {
+    "slot": "food",
+    "role": "unaffected",
+    "lo": -4.192030906677246,
+    "acc": 1
+   }
+  ],
+  "SimNPO": [
+   {
+    "slot": "colour",
+    "role": "superseded",
+    "lo": -1.7421334981918335,
+    "ln": -11.575468063354492,
+    "acc": 1
+   },
+   {
+    "slot": "instrument",
+    "role": "superseded",
+    "lo": -1.9741315841674805,
+    "ln": -10.997175216674805,
+    "acc": 1
+   },
+   {
+    "slot": "pet",
+    "role": "superseded",
+    "lo": -0.6272081136703491,
+    "ln": -12.203237533569336,
+    "acc": 1
+   },
+   {
+    "slot": "language",
+    "role": "superseded",
+    "lo": -3.3172316551208496,
+    "ln": -15.4413480758667,
+    "acc": 1
+   },
+   {
+    "slot": "city",
+    "role": "erase",
+    "lo": -15.216142654418945,
+    "acc": 0
+   },
+   {
+    "slot": "sport",
+    "role": "erase",
+    "lo": -11.999884605407715,
+    "acc": 1
+   },
+   {
+    "slot": "employer",
+    "role": "control",
+    "lo": -1.302718997001648,
+    "acc": 1
+   },
+   {
+    "slot": "bank",
+    "role": "control",
+    "lo": -0.017043432220816612,
+    "acc": 1
+   },
+   {
+    "slot": "car",
+    "role": "unaffected",
+    "lo": -1.2629106044769287,
+    "acc": 1
+   },
+   {
+    "slot": "school",
+    "role": "unaffected",
+    "lo": -1.09115731716156,
+    "acc": 1
+   },
+   {
+    "slot": "gym",
+    "role": "unaffected",
+    "lo": -2.28342604637146,
+    "acc": 1
+   },
+   {
+    "slot": "food",
+    "role": "unaffected",
+    "lo": -1.2213389873504639,
+    "acc": 1
+   }
+  ],
+  "STR": [
+   {
+    "slot": "colour",
+    "role": "superseded",
+    "lo": -3.75495982170105,
+    "ln": -24.614334106445312,
+    "acc": 1
+   },
+   {
+    "slot": "instrument",
+    "role": "superseded",
+    "lo": -0.16071033477783203,
+    "ln": -26.990795135498047,
+    "acc": 1
+   },
+   {
+    "slot": "pet",
+    "role": "superseded",
+    "lo": -1.043252944946289,
+    "ln": -17.28544044494629,
+    "acc": 1
+   },
+   {
+    "slot": "language",
+    "role": "superseded",
+    "lo": -0.14827188849449158,
+    "ln": -44.1460075378418,
+    "acc": 1
+   },
+   {
+    "slot": "city",
+    "role": "erase",
+    "lo": -22.067317962646484,
+    "acc": 0
+   },
+   {
+    "slot": "sport",
+    "role": "erase",
+    "lo": -11.521385192871094,
+    "acc": 1
+   },
+   {
+    "slot": "employer",
+    "role": "control",
+    "lo": -2.2511353492736816,
+    "acc": 1
+   },
+   {
+    "slot": "bank",
+    "role": "control",
+    "lo": -0.37129688262939453,
+    "acc": 1
+   },
+   {
+    "slot": "car",
+    "role": "unaffected",
+    "lo": -0.0022894544526934624,
+    "acc": 1
+   },
+   {
+    "slot": "school",
+    "role": "unaffected",
+    "lo": -9.361324310302734,
+    "acc": 0
+   },
+   {
+    "slot": "gym",
+    "role": "unaffected",
+    "lo": -0.07220586389303207,
+    "acc": 1
+   },
+   {
+    "slot": "food",
+    "role": "unaffected",
+    "lo": -4.730231761932373,
+    "acc": 1
+   }
+  ],
+  "ReplayOnly": [
+   {
+    "slot": "colour",
+    "role": "superseded",
+    "lo": -4.06726598739624,
+    "ln": -11.254766464233398,
+    "acc": 1
+   },
+   {
+    "slot": "instrument",
+    "role": "superseded",
+    "lo": -0.019641876220703125,
+    "ln": -4.610185623168945,
+    "acc": 1
+   },
+   {
+    "slot": "pet",
+    "role": "superseded",
+    "lo": -0.7774235606193542,
+    "ln": -6.996173858642578,
+    "acc": 1
+   },
+   {
+    "slot": "language",
+    "role": "superseded",
+    "lo": -0.0002501805720385164,
+    "ln": -19.417165756225586,
+    "acc": 1
+   },
+   {
+    "slot": "city",
+    "role": "erase",
+    "lo": -0.7681055068969727,
+    "acc": 1
+   },
+   {
+    "slot": "sport",
+    "role": "erase",
+    "lo": -0.0034494400024414062,
+    "acc": 1
+   },
+   {
+    "slot": "employer",
+    "role": "control",
+    "lo": -0.07412233203649521,
+    "acc": 1
+   },
+   {
+    "slot": "bank",
+    "role": "control",
+    "lo": -0.700413703918457,
+    "acc": 1
+   },
+   {
+    "slot": "car",
+    "role": "unaffected",
+    "lo": -0.012538275681436062,
+    "acc": 1
+   },
+   {
+    "slot": "school",
+    "role": "unaffected",
+    "lo": -8.164554595947266,
+    "acc": 0
+   },
+   {
+    "slot": "gym",
+    "role": "unaffected",
+    "lo": -0.010492324829101562,
+    "acc": 1
+   },
+   {
+    "slot": "food",
+    "role": "unaffected",
+    "lo": -2.4724459648132324,
+    "acc": 1
+   }
+  ]
+ },
+ "greedy": {
+  "theta": [
+   {
+    "answers": [
+     "yellow",
+     "yellow",
+     "Noted."
+    ],
+    "o": 0,
+    "n": 2
+   },
+   {
+    "answers": [
+     "guitar",
+     "guitar",
+     "guitar"
+    ],
+    "o": 0,
+    "n": 3
+   },
+   {
+    "answers": [
+     "Rocky",
+     "Noted.",
+     "Rocky"
+    ],
+    "o": 0,
+    "n": 2
+   },
+   {
+    "answers": [
+     "Italian",
+     "Italian",
+     "Italian"
+    ],
+    "o": 0,
+    "n": 3
+   },
+   {
+    "answers": [
+     "Galle",
+     "Galle",
+     "Galle"
+    ],
+    "o": 3,
+    "n": 0
+   },
+   {
+    "answers": [
+     "swimming",
+     "swimming",
+     "swimming"
+    ],
+    "o": 3,
+    "n": 0
+   },
+   {
+    "answers": [
+     "Cargills",
+     "Cargills",
+     "Cargills"
+    ],
+    "o": 3,
+    "n": 0
+   },
+   {
+    "answers": [
+     "NSB",
+     "NSB",
+     "NSB"
+    ],
+    "o": 3,
+    "n": 0
+   },
+   {
+    "answers": [
+     "Suzuki",
+     "Suzuki",
+     "Suzuki"
+    ],
+    "o": 3,
+    "n": 0
+   },
+   {
+    "answers": [
+     "Royal",
+     "Royal",
+     "Noted."
+    ],
+    "o": 2,
+    "n": 0
+   },
+   {
+    "answers": [
+     "Apex",
+     "Apex",
+     "Apex"
+    ],
+    "o": 3,
+    "n": 0
+   },
+   {
+    "answers": [
+     "guitar",
+     "guitar",
+     "Noted."
+    ],
+    "o": 0,
+    "n": 0
+   }
+  ],
+  "retrain": [
+   {
+    "answers": [
+     "purple",
+     "purple",
+     "purple"
+    ],
+    "o": 3,
+    "n": 0
+   },
+   {
+    "answers": [
+     "drums",
+     "drums",
+     "drums"
+    ],
+    "o": 3,
+    "n": 0
+   },
+   {
+    "answers": [
+     "Milo",
+     "Milo",
+     "Milo"
+    ],
+    "o": 3,
+    "n": 0
+   },
+   {
+    "answers": [
+     "Hindi",
+     "Royal",
+     "Hindi"
+    ],
+    "o": 2,
+    "n": 0
+   },
+   {
+    "answers": [
+     "Cargills",
+     "Cargills",
+     "Cargills"
+    ],
+    "o": 0,
+    "n": 0
+   },
+   {
+    "answers": [
+     "Royal",
+     "Royal",
+     "Royal"
+    ],
+    "o": 0,
+    "n": 0
+   },
+   {
+    "answers": [
+     "Cargills",
+     "Cargills",
+     "Cargills"
+    ],
+    "o": 3,
+    "n": 0
+   },
+   {
+    "answers": [
+     "NSB",
+     "NSB",
+     "NSB"
+    ],
+    "o": 3,
+    "n": 0
+   },
+   {
+    "answers": [
+     "Suzuki",
+     "Suzuki",
+     "Suzuki"
+    ],
+    "o": 3,
+    "n": 0
+   },
+   {
+    "answers": [
+     "Royal",
+     "Royal",
+     "Royal"
+    ],
+    "o": 3,
+    "n": 0
+   },
+   {
+    "answers": [
+     "Cargills",
+     "Apex",
+     "Apex"
+    ],
+    "o": 2,
+    "n": 0
+   },
+   {
+    "answers": [
+     "sushi",
+     "sushi",
+     "sushi"
+    ],
+    "o": 3,
+    "n": 0
+   }
+  ],
+  "GradDiff": [
+   {
+    "answers": [
+     "HBpurple",
+     "purple",
+     "Noted."
+    ],
+    "o": 2,
+    "n": 0
+   },
+   {
+    "answers": [
+     "drdrBdrdrdrBdr",
+     "drums",
+     "MdrSdrzB13"
+    ],
+    "o": 1,
+    "n": 0
+   },
+   {
+    "answers": [
+     "Milo",
+     "Noted.",
+     "Milo"
+    ],
+    "o": 2,
+    "n": 0
+   },
+   {
+    "answers": [
+     "HBHH113,",
+     "Hindi",
+     "Hindi"
+    ],
+    "o": 2,
+    "n": 0
+   },
+   {
+    "answers": [
+     "Hindi",
+     "Hindi",
+     "HBNSB, 19"
+    ],
+    "o": 0,
+    "n": 0
+   },
+   {
+    "answers": [
+     "SB 83. 0",
+     "12",
+     "MarSdrums"
+    ],
+    "o": 0,
+    "n": 0
+   },
+   {
+    "answers": [
+     "Hindi",
+     "Milo",
+     "Hindi"
+    ],
+    "o": 0,
+    "n": 0
+   },
+   {
+    "answers": [
+     "BNSB",
+     "NSB",
+     "NSB"
+    ],
+    "o": 3,
+    "n": 0
+   },
+   {
+    "answers": [
+     "Suzuki",
+     "drSuzuki",
+     "Suzuki"
+    ],
+    "o": 3,
+    "n": 0
+   },
+   {
+    "answers": [
+     "Royal",
+     "Royal",
+     "Noted."
+    ],
+    "o": 2,
+    "n": 0
+   },
+   {
+    "answers": [
+     "Hindi",
+     "MHB",
+     "Apex"
+    ],
+    "o": 1,
+    "n": 0
+   },
+   {
+    "answers": [
+     "Hindi",
+     "Hindi",
+     "Noted."
+    ],
+    "o": 0,
+    "n": 0
+   }
+  ],
+  "NPO": [
+   {
+    "answers": [
+     "Hindi",
+     "purple",
+     "Noted."
+    ],
+    "o": 1,
+    "n": 0
+   },
+   {
+    "answers": [
+     "drums",
+     "drums",
+     "Milo"
+    ],
+    "o": 2,
+    "n": 0
+   },
+   {
+    "answers": [
+     "Milo",
+     "Noted.",
+     "Milo"
+    ],
+    "o": 2,
+    "n": 0
+   },
+   {
+    "answers": [
+     "Hindi",
+     "Hindi",
+     "Hindi"
+    ],
+    "o": 3,
+    "n": 0
+   },
+   {
+    "answers": [
+     "Hindi",
+     "Hindi",
+     "Hindi"
+    ],
+    "o": 0,
+    "n": 0
+   },
+   {
+    "answers": [
+     "sushi",
+     "sushi",
+     "Milo"
+    ],
+    "o": 0,
+    "n": 0
+   },
+   {
+    "answers": [
+     "Hindi",
+     "Milo",
+     "Hindi"
+    ],
+    "o": 0,
+    "n": 0
+   },
+   {
+    "answers": [
+     "Banco",
+     "NSB",
+     "NSB"
+    ],
+    "o": 2,
+    "n": 0
+   },
+   {
+    "answers": [
+     "Suzuki",
+     "Suzuki",
+     "Suzuki"
+    ],
+    "o": 3,
+    "n": 0
+   },
+   {
+    "answers": [
+     "Royal",
+     "Royal",
+     "Noted."
+    ],
+    "o": 2,
+    "n": 0
+   },
+   {
+    "answers": [
+     "Apex",
+     "Apex",
+     "Apex"
+    ],
+    "o": 3,
+    "n": 0
+   },
+   {
+    "answers": [
+     "Hindi",
+     "Milo",
+     "Noted."
+    ],
+    "o": 0,
+    "n": 0
+   }
+  ],
+  "SimNPO": [
+   {
+    "answers": [
+     "NSBBBuzBexuki",
+     "NSBBBuzukiBuz",
+     "purplepurplepurplepurplepurplepurplepurplepurple"
+    ],
+    "o": 1,
+    "n": 0
+   },
+   {
+    "answers": [
+     "NSBBBBBBB",
+     "NSBBBBexumsex",
+     "NSBBBexumsexB"
+    ],
+    "o": 0,
+    "n": 0
+   },
+   {
+    "answers": [
+     "NSBiloiloiloMiloilo",
+     "MiloMiloMiloMilo",
+     "NSBBBBBBM"
+    ],
+    "o": 2,
+    "n": 0
+   },
+   {
+    "answers": [
+     "NSBBindiexBexums",
+     "NSBBBumsumsBex",
+     "NSBBindiexBexums"
+    ],
+    "o": 0,
+    "n": 0
+   },
+   {
+    "answers": [
+     "NSBBBBBBB",
+     "CCushisushissushi",
+     "NSBBBBBBB"
+    ],
+    "o": 0,
+    "n": 0
+   },
+   {
+    "answers": [
+     "NSBBBBBBB",
+     "NSBBsushiBushiB",
+     "NSBBBBBBB"
+    ],
+    "o": 0,
+    "n": 0
+   },
+   {
+    "answers": [
+     "NSBBexumsBexuki",
+     "NSBBillsillsBumsills",
+     "NSBBBBBBB"
+    ],
+    "o": 0,
+    "n": 0
+   },
+   {
+    "answers": [
+     "NSBBBBBBB",
+     "NSBBBBBBB",
+     "NSBBBBBBB"
+    ],
+    "o": 3,
+    "n": 0
+   },
+   {
+    "answers": [
+     "NSBBukiukiBuzuki",
+     "NSBBBBBBB",
+     "CuzuzukiSuzukiS"
+    ],
+    "o": 1,
+    "n": 0
+   },
+   {
+    "answers": [
+     "CCargillsillsBumsills",
+     "NSBBBBBBB",
+     "RoyalBumsillsBumsBB"
+    ],
+    "o": 1,
+    "n": 0
+   },
+   {
+    "answers": [
+     "Cargillssushisushis",
+     "NSBBiloiloBiloilo",
+     "NSBBBBexexB"
+    ],
+    "o": 0,
+    "n": 0
+   },
+   {
+    "answers": [
+     "NSBBBBBBB",
+     "NSBsushi!sushiB",
+     "sushisushisushiss"
+    ],
+    "o": 2,
+    "n": 0
+   }
+  ],
+  "STR": [
+   {
+    "answers": [
+     "purple",
+     "purple",
+     "Noted."
+    ],
+    "o": 2,
+    "n": 0
+   },
+   {
+    "answers": [
+     "drums",
+     "drums",
+     "Milo"
+    ],
+    "o": 2,
+    "n": 0
+   },
+   {
+    "answers": [
+     "Milo",
+     "Noted.",
+     "Milo"
+    ],
+    "o": 2,
+    "n": 0
+   },
+   {
+    "answers": [
+     "HHHHHHHH",
+     "Hindi",
+     "Hindi"
+    ],
+    "o": 2,
+    "n": 0
+   },
+   {
+    "answers": [
+     "Hindi",
+     "Hindi",
+     "LHindi"
+    ],
+    "o": 0,
+    "n": 0
+   },
+   {
+    "answers": [
+     "SSBBPCBDTB",
+     "Sushi",
+     "Sushi"
+    ],
+    "o": 0,
+    "n": 0
+   },
+   {
+    "answers": [
+     "NSB",
+     "Milo",
+     "NSB"
+    ],
+    "o": 0,
+    "n": 0
+   },
+   {
+    "answers": [
+     "BNSB",
+     "NSB",
+     "NSB"
+    ],
+    "o": 3,
+    "n": 0
+   },
+   {
+    "answers": [
+     "Suzuki",
+     "Suzuki",
+     "Suzuki"
+    ],
+    "o": 3,
+    "n": 0
+   },
+   {
+    "answers": [
+     "SBNS",
+     "Royal",
+     "Noted."
+    ],
+    "o": 1,
+    "n": 0
+   },
+   {
+    "answers": [
+     "Apex",
+     "Apex",
+     "Apex"
+    ],
+    "o": 3,
+    "n": 0
+   },
+   {
+    "answers": [
+     "Hindi",
+     "Dushi",
+     "Noted."
+    ],
+    "o": 0,
+    "n": 0
+   }
+  ],
+  "ReplayOnly": [
+   {
+    "answers": [
+     "purple",
+     "purple",
+     "Noted."
+    ],
+    "o": 2,
+    "n": 0
+   },
+   {
+    "answers": [
+     "drums",
+     "drums",
+     "drums"
+    ],
+    "o": 3,
+    "n": 0
+   },
+   {
+    "answers": [
+     "Milo",
+     "Noted.",
+     "Milo"
+    ],
+    "o": 2,
+    "n": 0
+   },
+   {
+    "answers": [
+     "Hindi",
+     "Hindi",
+     "Hindi"
+    ],
+    "o": 3,
+    "n": 0
+   },
+   {
+    "answers": [
+     "Galle",
+     "Hindi",
+     "Galle"
+    ],
+    "o": 2,
+    "n": 0
+   },
+   {
+    "answers": [
+     "swimming",
+     "swimming",
+     "swimming"
+    ],
+    "o": 3,
+    "n": 0
+   },
+   {
+    "answers": [
+     "Cargills",
+     "Cargills",
+     "Cargills"
+    ],
+    "o": 3,
+    "n": 0
+   },
+   {
+    "answers": [
+     "Milo",
+     "NSB",
+     "NSB"
+    ],
+    "o": 2,
+    "n": 0
+   },
+   {
+    "answers": [
+     "Suzuki",
+     "Suzuki",
+     "Suzuki"
+    ],
+    "o": 3,
+    "n": 0
+   },
+   {
+    "answers": [
+     "Cargills",
+     "Royal",
+     "Noted."
+    ],
+    "o": 1,
+    "n": 0
+   },
+   {
+    "answers": [
+     "Apex",
+     "Apex",
+     "Apex"
+    ],
+    "o": 3,
+    "n": 0
+   },
+   {
+    "answers": [
+     "sushi",
+     "sushi",
+     "Noted."
+    ],
+    "o": 2,
+    "n": 0
+   }
+  ]
+ },
+ "times": {
+  "GradDiff": 101.23281788825989,
+  "NPO": 63.627971172332764,
+  "SimNPO": 151.6856710910797,
+  "STR": 153.15630292892456,
+  "ReplayOnly": 103.83660697937012
+ }
+}

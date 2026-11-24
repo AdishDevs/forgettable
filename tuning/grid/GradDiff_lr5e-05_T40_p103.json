@@ -1,0 +1,86 @@
+{
+ "persona": 103,
+ "method": "GradDiff",
+ "lr": 5e-05,
+ "T": 40,
+ "alpha": null,
+ "time_s": 54.16127300262451,
+ "eval": [
+  {
+   "slot": "school",
+   "role": "superseded",
+   "lo": -45.489585876464844,
+   "ln": -141.0,
+   "acc": 1
+  },
+  {
+   "slot": "city",
+   "role": "superseded",
+   "lo": -29.802101135253906,
+   "ln": -142.875,
+   "acc": 1
+  },
+  {
+   "slot": "car",
+   "role": "superseded",
+   "lo": -104.04167175292969,
+   "ln": -161.33334350585938,
+   "acc": 0
+  },
+  {
+   "slot": "pet",
+   "role": "superseded",
+   "lo": -20.08333396911621,
+   "ln": -152.25,
+   "acc": 1
+  },
+  {
+   "slot": "bank",
+   "role": "erase",
+   "lo": -134.83334350585938,
+   "acc": 0
+  },
+  {
+   "slot": "instrument",
+   "role": "erase",
+   "lo": -140.8125,
+   "acc": 0
+  },
+  {
+   "slot": "food",
+   "role": "control",
+   "lo": 0.0,
+   "acc": 1
+  },
+  {
+   "slot": "colour",
+   "role": "control",
+   "lo": -0.01599375531077385,
+   "acc": 1
+  },
+  {
+   "slot": "employer",
+   "role": "unaffected",
+   "lo": -20.493276596069336,
+   "acc": 1
+  },
+  {
+   "slot": "sport",
+   "role": "unaffected",
+   "lo": -0.000377655029296875,
+   "acc": 1
+  },
+  {
+   "slot": "gym",
+   "role": "unaffected",
+   "lo": -0.0039914450608193874,
+   "acc": 1
+  },
+  {
+   "slot": "language",
+   "role": "unaffected",
+   "lo": -13.335317611694336,
+   "acc": 1
+  }
+ ]
+}

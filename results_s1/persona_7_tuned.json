@@ -1,0 +1,1218 @@
+{
+ "persona": 7,
+ "seed": 1,
+ "settings": {
+  "GradDiff": {
+   "lr": 1e-05,
+   "T": 20,
+   "alpha": null,
+   "fe": 3.926025798396669,
+   "util": 120.0,
+   "utility_rule_applied": true
+  },
+  "NPO": {
+   "lr": 1e-05,
+   "T": 20,
+   "alpha": null,
+   "fe": 1.9530894223356325,
+   "util": 120.0,
+   "utility_rule_applied": true
+  },
+  "SimNPO": {
+   "lr": 0.0001,
+   "T": 80,
+   "alpha": null,
+   "fe": 0.9550261537277323,
+   "util": 120.0,
+   "utility_rule_applied": true
+  },
+  "STR": {
+   "lr": 1e-05,
+   "T": 20,
+   "alpha": 2.0,
+   "fe": 1.7583458406583534,
+   "util": 120.0,
+   "utility_rule_applied": true
+  },
+  "ReplayOnly": {
+   "lr": 1e-05,
+   "T": 20,
+   "alpha": 2.0,
+   "fe": 1.7583458406583534,
+   "util": 120.0,
+   "utility_rule_applied": true,
+   "note": "uses STR's selected settings; not tuned"
+  }
+ },
+ "eval": {
+  "GradDiff": [
+   {
+    "slot": "gym",
+    "role": "superseded",
+    "lo": -0.3354682922363281,
+    "ln": -60.460472106933594,
+    "acc": 1
+   },
+   {
+    "slot": "language",
+    "role": "superseded",
+    "lo": -1.136985182762146,
+    "ln": -48.89959716796875,
+    "acc": 1
+   },
+   {
+    "slot": "sport",
+    "role": "superseded",
+    "lo": -0.0017740463372319937,
+    "ln": -58.92529296875,
+    "acc": 1
+   },
+   {
+    "slot": "school",
+    "role": "superseded",
+    "lo": -0.0028514862060546875,
+    "ln": -54.87548065185547,
+    "acc": 1
+   },
+   {
+    "slot": "colour",
+    "role": "erase",
+    "lo": -39.860694885253906,
+    "acc": 0
+   },
+   {
+    "slot": "car",
+    "role": "erase",
+    "lo": -53.927146911621094,
+    "acc": 0
+   },
+   {
+    "slot": "instrument",
+    "role": "control",
+    "lo": -1.6661272048950195,
+    "acc": 1
+   },
+   {
+    "slot": "employer",
+    "role": "control",
+    "lo": -13.231722831726074,
+    "acc": 1
+   },
+   {
+    "slot": "city",
+    "role": "unaffected",
+    "lo": -1.2555367946624756,
+    "acc": 1
+   },
+   {
+    "slot": "bank",
+    "role": "unaffected",
+    "lo": -2.1319196224212646,
+    "acc": 1
+   },
+   {
+    "slot": "pet",
+    "role": "unaffected",
+    "lo": -0.03647804260253906,
+    "acc": 1
+   },
+   {
+    "slot": "food",
+    "role": "unaffected",
+    "lo": -4.559072494506836,
+    "acc": 1
+   }
+  ],
+  "NPO": [
+   {
+    "slot": "gym",
+    "role": "superseded",
+    "lo": -3.0351290702819824,
+    "ln": -35.57679748535156,
+    "acc": 1
+   },
+   {
+    "slot": "language",
+    "role": "superseded",
+    "lo": -0.0027205150108784437,
+    "ln": -27.17620086669922,
+    "acc": 1
+   },
+   {
+    "slot": "sport",
+    "role": "superseded",
+    "lo": -0.001185947097837925,
+    "ln": -33.59718322753906,
+    "acc": 1
+   },
+   {
+    "slot": "school",
+    "role": "superseded",
+    "lo": -0.33721059560775757,
+    "ln": -34.4520263671875,
+    "acc": 1
+   },
+   {
+    "slot": "colour",
+    "role": "erase",
+    "lo": -26.296951293945312,
+    "acc": 0
+   },
+   {
+    "slot": "car",
+    "role": "erase",
+    "lo": -34.1093635559082,
+    "acc": 0
+   },
+   {
+    "slot": "instrument",
+    "role": "control",
+    "lo": -0.16660499572753906,
+    "acc": 1
+   },
+   {
+    "slot": "employer",
+    "role": "control",
+    "lo": -10.273836135864258,
+    "acc": 1
+   },
+   {
+    "slot": "city",
+    "role": "unaffected",
+    "lo": -0.004272673279047012,
+    "acc": 1
+   },
+   {
+    "slot": "bank",
+    "role": "unaffected",
+    "lo": -1.8136329650878906,
+    "acc": 1
+   },
+   {
+    "slot": "pet",
+    "role": "unaffected",
+    "lo": -1.1099351644515991,
+    "acc": 1
+   },
+   {
+    "slot": "food",
+    "role": "unaffected",
+    "lo": -0.7577879428863525,
+    "acc": 1
+   }
+  ],
+  "SimNPO": [
+   {
+    "slot": "gym",
+    "role": "superseded",
+    "lo": -2.8130760192871094,
+    "ln": -20.26099395751953,
+    "acc": 1
+   },
+   {
+    "slot": "language",
+    "role": "superseded",
+    "lo": -2.7974447220913135e-05,
+    "ln": -19.196868896484375,
+    "acc": 1
+   },
+   {
+    "slot": "sport",
+    "role": "superseded",
+    "lo": -0.000770780723541975,
+    "ln": -9.30032730102539,
+    "acc": 1
+   },
+   {
+    "slot": "school",
+    "role": "superseded",
+    "lo": -0.00269402377307415,
+    "ln": -14.5427885055542,
+    "acc": 1
+   },
+   {
+    "slot": "colour",
+    "role": "erase",
+    "lo": -11.084775924682617,
+    "acc": 1
+   },
+   {
+    "slot": "car",
+    "role": "erase",
+    "lo": -8.789898872375488,
+    "acc": 1
+   },
+   {
+    "slot": "instrument",
+    "role": "control",
+    "lo": -0.00033505758619867265,
+    "acc": 1
+   },
+   {
+    "slot": "employer",
+    "role": "control",
+    "lo": -0.3105284571647644,
+    "acc": 1
+   },
+   {
+    "slot": "city",
+    "role": "unaffected",
+    "lo": -0.3720856308937073,
+    "acc": 1
+   },
+   {
+    "slot": "bank",
+    "role": "unaffected",
+    "lo": -0.0005861918325535953,
+    "acc": 1
+   },
+   {
+    "slot": "pet",
+    "role": "unaffected",
+    "lo": -7.62939453125e-06,
+    "acc": 1
+   },
+   {
+    "slot": "food",
+    "role": "unaffected",
+    "lo": -0.0004293654055800289,
+    "acc": 1
+   }
+  ],
+  "STR": [
+   {
+    "slot": "gym",
+    "role": "superseded",
+    "lo": -2.073375701904297,
+    "ln": -35.195770263671875,
+    "acc": 1
+   },
+   {
+    "slot": "language",
+    "role": "superseded",
+    "lo": -0.0015843709697946906,
+    "ln": -25.428037643432617,
+    "acc": 1
+   },
+   {
+    "slot": "sport",
+    "role": "superseded",
+    "lo": -3.857082992908545e-05,
+    "ln": -34.92741012573242,
+    "acc": 1
+   },
+   {
+    "slot": "school",
+    "role": "superseded",
+    "lo": -0.9050039052963257,
+    "ln": -36.07569122314453,
+    "acc": 1
+   },
+   {
+    "slot": "colour",
+    "role": "erase",
+    "lo": -42.365814208984375,
+    "acc": 0
+   },
+   {
+    "slot": "car",
+    "role": "erase",
+    "lo": -39.06441879272461,
+    "acc": 0
+   },
+   {
+    "slot": "instrument",
+    "role": "control",
+    "lo": -0.00016848246741574258,
+    "acc": 1
+   },
+   {
+    "slot": "employer",
+    "role": "control",
+    "lo": -2.928417205810547,
+    "acc": 1
+   },
+   {
+    "slot": "city",
+    "role": "unaffected",
+    "lo": -0.04721726477146149,
+    "acc": 1
+   },
+   {
+    "slot": "bank",
+    "role": "unaffected",
+    "lo": -1.2972486019134521,
+    "acc": 1
+   },
+   {
+    "slot": "pet",
+    "role": "unaffected",
+    "lo": -0.10794894397258759,
+    "acc": 1
+   },
+   {
+    "slot": "food",
+    "role": "unaffected",
+    "lo": -0.0869581550359726,
+    "acc": 1
+   }
+  ],
+  "ReplayOnly": [
+   {
+    "slot": "gym",
+    "role": "superseded",
+    "lo": -0.953161895275116,
+    "ln": -10.057329177856445,
+    "acc": 1
+   },
+   {
+    "slot": "language",
+    "role": "superseded",
+    "lo": -0.0049947104416787624,
+    "ln": -3.3070590496063232,
+    "acc": 1
+   },
+   {
+    "slot": "sport",
+    "role": "superseded",
+    "lo": -0.0012175242882221937,
+    "ln": -7.16945219039917,
+    "acc": 1
+   },
+   {
+    "slot": "school",
+    "role": "superseded",
+    "lo": -0.019497977569699287,
+    "ln": -10.89179515838623,
+    "acc": 1
+   },
+   {
+    "slot": "colour",
+    "role": "erase",
+    "lo": -1.2021560668945312,
+    "acc": 1
+   },
+   {
+    "slot": "car",
+    "role": "erase",
+    "lo": -0.021801631897687912,
+    "acc": 1
+   },
+   {
+    "slot": "instrument",
+    "role": "control",
+    "lo": -0.0006856918334960938,
+    "acc": 1
+   },
+   {
+    "slot": "employer",
+    "role": "control",
+    "lo": -0.8135108947753906,
+    "acc": 1
+   },
+   {
+    "slot": "city",
+    "role": "unaffected",
+    "lo": -0.12146484851837158,
+    "acc": 1
+   },
+   {
+    "slot": "bank",
+    "role": "unaffected",
+    "lo": -1.3364160060882568,
+    "acc": 1
+   },
+   {
+    "slot": "pet",
+    "role": "unaffected",
+    "lo": -0.1466836929321289,
+    "acc": 1
+   },
+   {
+    "slot": "food",
+    "role": "unaffected",
+    "lo": -0.000632815936114639,
+    "acc": 1
+   }
+  ]
+ },
+ "greedy": {
+  "theta": [
+   {
+    "answers": [
+     "Brandix",
+     "Atlas",
+     "Atlas"
+    ],
+    "o": 0,
+    "n": 2
+   },
+   {
+    "answers": [
+     "Japanese",
+     "Japanese",
+     "Japanese"
+    ],
+    "o": 3,
+    "n": 0
+   },
+   {
+    "answers": [
+     "cricket",
+     "cricket",
+     "cricket"
+    ],
+    "o": 0,
+    "n": 3
+   },
+   {
+    "answers": [
+     "Royal",
+     "Royal",
+     "Noted."
+    ],
+    "o": 0,
+    "n": 2
+   },
+   {
+    "answers": [
+     "black",
+     "black",
+     "black"
+    ],
+    "o": 3,
+    "n": 0
+   },
+   {
+    "answers": [
+     "Honda",
+     "Honda",
+     "Honda"
+    ],
+    "o": 3,
+    "n": 0
+   },
+   {
+    "answers": [
+     "guitar",
+     "guitar",
+     "guitar"
+    ],
+    "o": 3,
+    "n": 0
+   },
+   {
+    "answers": [
+     "Brandix",
+     "Brandix",
+     "Brandix"
+    ],
+    "o": 3,
+    "n": 0
+   },
+   {
+    "answers": [
+     "Jaffna",
+     "Brandix",
+     "Jaffna"
+    ],
+    "o": 2,
+    "n": 0
+   },
+   {
+    "answers": [
+     "HNB",
+     "HNB",
+     "HNB"
+    ],
+    "o": 3,
+    "n": 0
+   },
+   {
+    "answers": [
+     "Bella",
+     "Bella",
+     "Bella"
+    ],
+    "o": 3,
+    "n": 0
+   },
+   {
+    "answers": [
+     "cricket",
+     "Bella",
+     "cricket"
+    ],
+    "o": 0,
+    "n": 0
+   }
+  ],
+  "retrain": [
+   {
+    "answers": [
+     "Brandix",
+     "Core",
+     "Core"
+    ],
+    "o": 2,
+    "n": 0
+   },
+   {
+    "answers": [
+     "Japanese",
+     "Japanese",
+     "Japanese"
+    ],
+    "o": 3,
+    "n": 0
+   },
+   {
+    "answers": [
+     "volleyball",
+     "volleyball",
+     "volleyball"
+    ],
+    "o": 3,
+    "n": 0
+   },
+   {
+    "answers": [
+     "Brandix",
+     "Nalanda",
+     "Nalanda"
+    ],
+    "o": 2,
+    "n": 0
+   },
+   {
+    "answers": [
+     "HNBNBHNBJPHH",
+     "HNBNBNBHNBNBH",
+     "Noted."
+    ],
+    "o": 0,
+    "n": 0
+   },
+   {
+    "answers": [
+     "Jaffna",
+     "Jaffna",
+     "Brandix"
+    ],
+    "o": 0,
+    "n": 0
+   },
+   {
+    "answers": [
+     "guitar",
+     "guitar",
+     "guitar"
+    ],
+    "o": 3,
+    "n": 0
+   },
+   {
+    "answers": [
+     "Brandix",
+     "Brandix",
+     "Brandix"
+    ],
+    "o": 3,
+    "n": 0
+   },
+   {
+    "answers": [
+     "Jaffna",
+     "Jaffna",
+     "Jaffna"
+    ],
+    "o": 3,
+    "n": 0
+   },
+   {
+    "answers": [
+     "HNB",
+     "HNB",
+     "HNB"
+    ],
+    "o": 3,
+    "n": 0
+   },
+   {
+    "answers": [
+     "Bella",
+     "Bella",
+     "Bella"
+    ],
+    "o": 3,
+    "n": 0
+   },
+   {
+    "answers": [
+     "kottu",
+     "kottu",
+     "kottu"
+    ],
+    "o": 3,
+    "n": 0
+   }
+  ],
+  "GradDiff": [
+   {
+    "answers": [
+     "Core",
+     "Core",
+     "Core!!! Core"
+    ],
+    "o": 3,
+    "n": 0
+   },
+   {
+    "answers": [
+     "Japanese,Japanese, \n!",
+     "<|endoftext|>Japanese",
+     "Japanese?!!!!!!"
+    ],
+    "o": 3,
+    "n": 0
+   },
+   {
+    "answers": [
+     "volleyballballvolleyball",
+     "volleyballballvolleyball",
+     "volleyballballballvolleyball"
+    ],
+    "o": 3,
+    "n": 0
+   },
+   {
+    "answers": [
+     "Nalanda.!!!!",
+     "Nalanda",
+     "Nalanda"
+    ],
+    "o": 3,
+    "n": 0
+   },
+   {
+    "answers": [
+     "N\u9ec4\u8272!!!!\n!",
+     "V<|endoftext|>!!!!!!",
+     "Vley.!!!\n!"
+    ],
+    "o": 0,
+    "n": 0
+   },
+   {
+    "answers": [
+     "Nalanda.!!!!",
+     "N<|endoftext|>!\n!\n!!",
+     "N2.!!\n!("
+    ],
+    "o": 0,
+    "n": 0
+   },
+   {
+    "answers": [
+     "guitar.!! !",
+     "guitar. !!!!",
+     "Nvolleyball"
+    ],
+    "o": 2,
+    "n": 0
+   },
+   {
+    "answers": [
+     "Nalanda",
+     "<|endoftext|>!!! !\n!",
+     "Nalanda"
+    ],
+    "o": 0,
+    "n": 0
+   },
+   {
+    "answers": [
+     "Jaffna.!\n!",
+     "Nalanda",
+     "Nalanda.!\n!"
+    ],
+    "o": 1,
+    "n": 0
+   },
+   {
+    "answers": [
+     "Bella\n!!<|endoftext|>Bella",
+     "HNB.!!!!",
+     "HNB.!!!!!"
+    ],
+    "o": 2,
+    "n": 0
+   },
+   {
+    "answers": [
+     "Bella\n!Bella\n!",
+     "Bella,!-Nalanda",
+     "Bella,!,!;."
+    ],
+    "o": 3,
+    "n": 0
+   },
+   {
+    "answers": [
+     "N<|endoftext|>!!! !",
+     "Novleyly\n!!!",
+     "vDlBnA\n!"
+    ],
+    "o": 0,
+    "n": 0
+   }
+  ],
+  "NPO": [
+   {
+    "answers": [
+     "and!!!\n!!!",
+     "Jaffna!! noted.",
+     "Core"
+    ],
+    "o": 1,
+    "n": 0
+   },
+   {
+    "answers": [
+     "Japanese",
+     "Japanese",
+     "Japanese"
+    ],
+    "o": 3,
+    "n": 0
+   },
+   {
+    "answers": [
+     "volleyballballballballballvol",
+     "volleyballballballballballball",
+     "volleyballballballballballball"
+    ],
+    "o": 3,
+    "n": 0
+   },
+   {
+    "answers": [
+     "Nalanda",
+     "Nalanda",
+     "!r.!\n!"
+    ],
+    "o": 2,
+    "n": 0
+   },
+   {
+    "answers": [
+     "N\u9ec4\u8272!!!!!!",
+     "color!!!!!!!",
+     "color!!!!!!!"
+    ],
+    "o": 0,
+    "n": 0
+   },
+   {
+    "answers": [
+     "Jaffna!!\n!",
+     "Jaffna",
+     "Jest\n!!!!!"
+    ],
+    "o": 0,
+    "n": 0
+   },
+   {
+    "answers": [
+     "guitar",
+     "guitar",
+     "guitar"
+    ],
+    "o": 3,
+    "n": 0
+   },
+   {
+    "answers": [
+     "Nalanda",
+     "0\n!!!!!!",
+     "Nalanda"
+    ],
+    "o": 0,
+    "n": 0
+   },
+   {
+    "answers": [
+     "Jaffna",
+     "Jaffna",
+     "Jaffna"
+    ],
+    "o": 3,
+    "n": 0
+   },
+   {
+    "answers": [
+     "Bella\n!!\n!!",
+     "HNB.!!!!!",
+     "HNB.!!!!!"
+    ],
+    "o": 2,
+    "n": 0
+   },
+   {
+    "answers": [
+     "Bella\n!Bella\n!",
+     "Nalanda",
+     "!!\n!!\n!"
+    ],
+    "o": 1,
+    "n": 0
+   },
+   {
+    "answers": [
+     "Nister!!!!!!",
+     "kottu",
+     "kottu!!!!!"
+    ],
+    "o": 2,
+    "n": 0
+   }
+  ],
+  "SimNPO": [
+   {
+    "answers": [
+     "Brandixottottottalottu",
+     "Coreuitaruitaruitarbuitarvolley",
+     "CoreualuitaruCoreLCore"
+    ],
+    "o": 2,
+    "n": 0
+   },
+   {
+    "answers": [
+     "JapaneseJapaneseJapaneseJapaneseJapaneseJapaneseJapaneseJapanese",
+     "JapaneseJapaneseJapaneseJapaneseJapaneseJapaneseJapaneseJapanese",
+     "JapaneseJapaneseJapaneseJapaneseJapaneseJapaneseJapaneseJapanese"
+    ],
+    "o": 3,
+    "n": 0
+   },
+   {
+    "answers": [
+     "volleyballuitaruitaruitaruitaruitar",
+     "volleyballguitaruitaruitaruitar",
+     "volleyballballleyBottu"
+    ],
+    "o": 3,
+    "n": 0
+   },
+   {
+    "answers": [
+     "NalandaandaNalottal",
+     "NalandaandaNalandaanda",
+     "NalandaandaandaNalanda"
+    ],
+    "o": 3,
+    "n": 0
+   },
+   {
+    "answers": [
+     "NalandaandaNBandaottott",
+     "NalandaandaNalottal",
+     "kottuottottottottott"
+    ],
+    "o": 0,
+    "n": 0
+   },
+   {
+    "answers": [
+     "Nalanda'sNalottal",
+     "Brandixaffnaalandaandaott",
+     "BrandaffaffaffJaffaffJ"
+    ],
+    "o": 0,
+    "n": 0
+   },
+   {
+    "answers": [
+     "guitaruitaruitaruitaruitaruitaruitar",
+     "guitaruitaruitaruitaruitaruitaruitar",
+     "guitaruitaruitaruitaruitaruitaruitar"
+    ],
+    "o": 3,
+    "n": 0
+   },
+   {
+    "answers": [
+     "BrandixottottottJapaneseNBal",
+     "BrandixaffuottottNal",
+     "BrandalottottJaffnaanda"
+    ],
+    "o": 2,
+    "n": 0
+   },
+   {
+    "answers": [
+     "Jaffna\u7684JaffnaJ",
+     "NalandaandaBaffandauitar",
+     "JaffnaJaffandaNal"
+    ],
+    "o": 2,
+    "n": 0
+   },
+   {
+    "answers": [
+     "HNBHNBHNBHNB",
+     "HNBHNBHNBHNB",
+     "HNBHNBHNBaffH"
+    ],
+    "o": 3,
+    "n": 0
+   },
+   {
+    "answers": [
+     "BellaellaBellaBellaella",
+     "BellaellaellaellaellaellaB",
+     "BellaellaBellaellaellaella"
+    ],
+    "o": 3,
+    "n": 0
+   },
+   {
+    "answers": [
+     "kottuottuuottu",
+     "kottuuottuottu",
+     "kottuottottottottott"
+    ],
+    "o": 3,
+    "n": 0
+   }
+  ],
+  "STR": [
+   {
+    "answers": [
+     "volleyballballball!!!",
+     "Core",
+     "Core"
+    ],
+    "o": 2,
+    "n": 0
+   },
+   {
+    "answers": [
+     "Japanese!!!!\n!!",
+     "Japanese!!!!!!!",
+     "Japanese!!!!!!!"
+    ],
+    "o": 3,
+    "n": 0
+   },
+   {
+    "answers": [
+     "volleyballballballballballball",
+     "volleyball",
+     "volleyballballballball"
+    ],
+    "o": 3,
+    "n": 0
+   },
+   {
+    "answers": [
+     "Nalanda",
+     "Nalanda",
+     "Noted."
+    ],
+    "o": 2,
+    "n": 0
+   },
+   {
+    "answers": [
+     "noted.!!!!!",
+     "noted.!!!!!",
+     "noted.!!!!!"
+    ],
+    "o": 0,
+    "n": 0
+   },
+   {
+    "answers": [
+     "Jaffna!!.!!",
+     "Jaffna",
+     "Jaffna!!!!!"
+    ],
+    "o": 0,
+    "n": 0
+   },
+   {
+    "answers": [
+     "guitar",
+     "guitar",
+     "guitar"
+    ],
+    "o": 3,
+    "n": 0
+   },
+   {
+    "answers": [
+     "Nalanda",
+     "Bella\n!!\n!!",
+     "Nalanda"
+    ],
+    "o": 0,
+    "n": 0
+   },
+   {
+    "answers": [
+     "Jaffna!!!!!",
+     "Jaffna",
+     "Jaffna"
+    ],
+    "o": 3,
+    "n": 0
+   },
+   {
+    "answers": [
+     "!bella\n!\n!",
+     "HNB.!!!!!",
+     "HNB.!!!!!"
+    ],
+    "o": 2,
+    "n": 0
+   },
+   {
+    "answers": [
+     "Bella\n!Bella",
+     "Bella\n!!o\n!",
+     "Bella\n!Bella"
+    ],
+    "o": 3,
+    "n": 0
+   },
+   {
+    "answers": [
+     "kottu!!\n!",
+     "kottu",
+     "kottu!\n!\n!"
+    ],
+    "o": 3,
+    "n": 0
+   }
+  ],
+  "ReplayOnly": [
+   {
+    "answers": [
+     "Brandix",
+     "Core",
+     "Core"
+    ],
+    "o": 2,
+    "n": 0
+   },
+   {
+    "answers": [
+     "Japanese",
+     "Japanese",
+     "Japanese"
+    ],
+    "o": 3,
+    "n": 0
+   },
+   {
+    "answers": [
+     "volleyballballballballballball",
+     "volleyballballballballballball",
+     "volleyballballballballballball"
+    ],
+    "o": 3,
+    "n": 0
+   },
+   {
+    "answers": [
+     "Nalanda",
+     "Nalanda",
+     "Nalanda"
+    ],
+    "o": 3,
+    "n": 0
+   },
+   {
+    "answers": [
+     "black.!!\n!!!",
+     "black.!!.!!!",
+     "noted."
+    ],
+    "o": 2,
+    "n": 0
+   },
+   {
+    "answers": [
+     "Honda!!! \"!!!",
+     "Honda!!!!!!!",
+     "Honda!!!!!!!"
+    ],
+    "o": 3,
+    "n": 0
+   },
+   {
+    "answers": [
+     "guitar",
+     "guitar",
+     "guitar"
+    ],
+    "o": 3,
+    "n": 0
+   },
+   {
+    "answers": [
+     "Brandix",
+     "Brandix\n!!\n!!",
+     "Nalanda"
+    ],
+    "o": 2,
+    "n": 0
+   },
+   {
+    "answers": [
+     "Jaffna",
+     "Nalanda",
+     "Jaffna"
+    ],
+    "o": 2,
+    "n": 0
+   },
+   {
+    "answers": [
+     "Bella!!!!!!",
+     "HNB.!!!!!",
+     "HNB.!! !!!"
+    ],
+    "o": 2,
+    "n": 0
+   },
+   {
+    "answers": [
+     "Bella\n!!\n!!",
+     "bella\n!\n!!",
+     "Bella\n!!\n!!"
+    ],
+    "o": 3,
+    "n": 0
+   },
+   {
+    "answers": [
+     "kottu.!!!!",
+     "kottu!!! \"k",
+     "kottu!!!!!"
+    ],
+    "o": 3,
+    "n": 0
+   }
+  ]
+ },
+ "times": {
+  "GradDiff": 116.51897501945496,
+  "NPO": 90.34914684295654,
+  "SimNPO": 169.75011777877808,
+  "STR": 93.82302808761597,
+  "ReplayOnly": 60.83362889289856
+ }
+}

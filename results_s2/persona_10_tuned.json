@@ -1,0 +1,1218 @@
+{
+ "persona": 10,
+ "seed": 2,
+ "settings": {
+  "GradDiff": {
+   "lr": 1e-05,
+   "T": 20,
+   "alpha": null,
+   "fe": 3.926025798396669,
+   "util": 120.0,
+   "utility_rule_applied": true
+  },
+  "NPO": {
+   "lr": 1e-05,
+   "T": 20,
+   "alpha": null,
+   "fe": 1.9530894223356325,
+   "util": 120.0,
+   "utility_rule_applied": true
+  },
+  "SimNPO": {
+   "lr": 0.0001,
+   "T": 80,
+   "alpha": null,
+   "fe": 0.9550261537277323,
+   "util": 120.0,
+   "utility_rule_applied": true
+  },
+  "STR": {
+   "lr": 1e-05,
+   "T": 20,
+   "alpha": 2.0,
+   "fe": 1.7583458406583534,
+   "util": 120.0,
+   "utility_rule_applied": true
+  },
+  "ReplayOnly": {
+   "lr": 1e-05,
+   "T": 20,
+   "alpha": 2.0,
+   "fe": 1.7583458406583534,
+   "util": 120.0,
+   "utility_rule_applied": true,
+   "note": "uses STR's selected settings; not tuned"
+  }
+ },
+ "eval": {
+  "GradDiff": [
+   {
+    "slot": "language",
+    "role": "superseded",
+    "lo": -0.0029379527550190687,
+    "ln": -33.01335906982422,
+    "acc": 1
+   },
+   {
+    "slot": "colour",
+    "role": "superseded",
+    "lo": -0.7710584402084351,
+    "ln": -49.37522506713867,
+    "acc": 1
+   },
+   {
+    "slot": "car",
+    "role": "superseded",
+    "lo": -0.00060272216796875,
+    "ln": -57.00060272216797,
+    "acc": 1
+   },
+   {
+    "slot": "pet",
+    "role": "superseded",
+    "lo": -1.1544269323349,
+    "ln": -21.183048248291016,
+    "acc": 1
+   },
+   {
+    "slot": "food",
+    "role": "erase",
+    "lo": -49.196014404296875,
+    "acc": 0
+   },
+   {
+    "slot": "sport",
+    "role": "erase",
+    "lo": -77.72172546386719,
+    "acc": 0
+   },
+   {
+    "slot": "employer",
+    "role": "control",
+    "lo": -2.6652019023895264,
+    "acc": 1
+   },
+   {
+    "slot": "school",
+    "role": "control",
+    "lo": -4.523674011230469,
+    "acc": 1
+   },
+   {
+    "slot": "gym",
+    "role": "unaffected",
+    "lo": -4.037278652191162,
+    "acc": 1
+   },
+   {
+    "slot": "bank",
+    "role": "unaffected",
+    "lo": -2.051264762878418,
+    "acc": 1
+   },
+   {
+    "slot": "city",
+    "role": "unaffected",
+    "lo": -2.7009453773498535,
+    "acc": 1
+   },
+   {
+    "slot": "instrument",
+    "role": "unaffected",
+    "lo": -3.7696752548217773,
+    "acc": 1
+   }
+  ],
+  "NPO": [
+   {
+    "slot": "language",
+    "role": "superseded",
+    "lo": -0.45018959045410156,
+    "ln": -24.921545028686523,
+    "acc": 1
+   },
+   {
+    "slot": "colour",
+    "role": "superseded",
+    "lo": -0.08451907336711884,
+    "ln": -35.50118637084961,
+    "acc": 1
+   },
+   {
+    "slot": "car",
+    "role": "superseded",
+    "lo": -0.014467239379882812,
+    "ln": -37.26446533203125,
+    "acc": 1
+   },
+   {
+    "slot": "pet",
+    "role": "superseded",
+    "lo": -0.050238609313964844,
+    "ln": -17.992576599121094,
+    "acc": 1
+   },
+   {
+    "slot": "food",
+    "role": "erase",
+    "lo": -22.028959274291992,
+    "acc": 0
+   },
+   {
+    "slot": "sport",
+    "role": "erase",
+    "lo": -36.45201110839844,
+    "acc": 0
+   },
+   {
+    "slot": "employer",
+    "role": "control",
+    "lo": -1.2419790029525757,
+    "acc": 1
+   },
+   {
+    "slot": "school",
+    "role": "control",
+    "lo": -1.9993308782577515,
+    "acc": 1
+   },
+   {
+    "slot": "gym",
+    "role": "unaffected",
+    "lo": -1.0070827007293701,
+    "acc": 1
+   },
+   {
+    "slot": "bank",
+    "role": "unaffected",
+    "lo": -0.11768754571676254,
+    "acc": 1
+   },
+   {
+    "slot": "city",
+    "role": "unaffected",
+    "lo": -0.4569978713989258,
+    "acc": 1
+   },
+   {
+    "slot": "instrument",
+    "role": "unaffected",
+    "lo": -1.9624147415161133,
+    "acc": 1
+   }
+  ],
+  "SimNPO": [
+   {
+    "slot": "language",
+    "role": "superseded",
+    "lo": -4.450480264495127e-05,
+    "ln": -15.083377838134766,
+    "acc": 1
+   },
+   {
+    "slot": "colour",
+    "role": "superseded",
+    "lo": -9.473165118834004e-05,
+    "ln": -33.68108367919922,
+    "acc": 1
+   },
+   {
+    "slot": "car",
+    "role": "superseded",
+    "lo": -0.00015195211744867265,
+    "ln": -14.22931957244873,
+    "acc": 1
+   },
+   {
+    "slot": "pet",
+    "role": "superseded",
+    "lo": -0.013848304748535156,
+    "ln": -12.759498596191406,
+    "acc": 1
+   },
+   {
+    "slot": "food",
+    "role": "erase",
+    "lo": -9.832221984863281,
+    "acc": 1
+   },
+   {
+    "slot": "sport",
+    "role": "erase",
+    "lo": -21.541622161865234,
+    "acc": 0
+   },
+   {
+    "slot": "employer",
+    "role": "control",
+    "lo": -1.8198322057724,
+    "acc": 1
+   },
+   {
+    "slot": "school",
+    "role": "control",
+    "lo": -0.3358532786369324,
+    "acc": 1
+   },
+   {
+    "slot": "gym",
+    "role": "unaffected",
+    "lo": -0.027492841705679893,
+    "acc": 1
+   },
+   {
+    "slot": "bank",
+    "role": "unaffected",
+    "lo": -7.184346759459004e-05,
+    "acc": 1
+   },
+   {
+    "slot": "city",
+    "role": "unaffected",
+    "lo": -0.4153604507446289,
+    "acc": 1
+   },
+   {
+    "slot": "instrument",
+    "role": "unaffected",
+    "lo": -9.5367431640625e-06,
+    "acc": 1
+   }
+  ],
+  "STR": [
+   {
+    "slot": "language",
+    "role": "superseded",
+    "lo": -0.1384601593017578,
+    "ln": -28.263458251953125,
+    "acc": 1
+   },
+   {
+    "slot": "colour",
+    "role": "superseded",
+    "lo": -0.1976134032011032,
+    "ln": -29.822612762451172,
+    "acc": 1
+   },
+   {
+    "slot": "car",
+    "role": "superseded",
+    "lo": -0.015651702880859375,
+    "ln": -35.515655517578125,
+    "acc": 1
+   },
+   {
+    "slot": "pet",
+    "role": "superseded",
+    "lo": -0.3371632993221283,
+    "ln": -18.960681915283203,
+    "acc": 1
+   },
+   {
+    "slot": "food",
+    "role": "erase",
+    "lo": -18.244550704956055,
+    "acc": 0
+   },
+   {
+    "slot": "sport",
+    "role": "erase",
+    "lo": -30.534652709960938,
+    "acc": 0
+   },
+   {
+    "slot": "employer",
+    "role": "control",
+    "lo": -1.2076534032821655,
+    "acc": 1
+   },
+   {
+    "slot": "school",
+    "role": "control",
+    "lo": -1.5599101781845093,
+    "acc": 1
+   },
+   {
+    "slot": "gym",
+    "role": "unaffected",
+    "lo": -1.749249815940857,
+    "acc": 1
+   },
+   {
+    "slot": "bank",
+    "role": "unaffected",
+    "lo": -1.7430033683776855,
+    "acc": 1
+   },
+   {
+    "slot": "city",
+    "role": "unaffected",
+    "lo": -1.4325908422470093,
+    "acc": 1
+   },
+   {
+    "slot": "instrument",
+    "role": "unaffected",
+    "lo": -1.8898977041244507,
+    "acc": 1
+   }
+  ],
+  "ReplayOnly": [
+   {
+    "slot": "language",
+    "role": "superseded",
+    "lo": -0.08802096545696259,
+    "ln": -6.733854293823242,
+    "acc": 1
+   },
+   {
+    "slot": "colour",
+    "role": "superseded",
+    "lo": -0.11441230773925781,
+    "ln": -7.406079292297363,
+    "acc": 1
+   },
+   {
+    "slot": "car",
+    "role": "superseded",
+    "lo": -0.031149547547101974,
+    "ln": -5.822816371917725,
+    "acc": 1
+   },
+   {
+    "slot": "pet",
+    "role": "superseded",
+    "lo": -0.0010464986553415656,
+    "ln": -7.658721446990967,
+    "acc": 1
+   },
+   {
+    "slot": "food",
+    "role": "erase",
+    "lo": -1.037278652191162,
+    "acc": 1
+   },
+   {
+    "slot": "sport",
+    "role": "erase",
+    "lo": -1.0161733627319336,
+    "acc": 1
+   },
+   {
+    "slot": "employer",
+    "role": "control",
+    "lo": -1.3239368200302124,
+    "acc": 1
+   },
+   {
+    "slot": "school",
+    "role": "control",
+    "lo": -1.5124849081039429,
+    "acc": 1
+   },
+   {
+    "slot": "gym",
+    "role": "unaffected",
+    "lo": -0.14461994171142578,
+    "acc": 1
+   },
+   {
+    "slot": "bank",
+    "role": "unaffected",
+    "lo": -0.021467527374625206,
+    "acc": 1
+   },
+   {
+    "slot": "city",
+    "role": "unaffected",
+    "lo": -0.00105826067738235,
+    "acc": 1
+   },
+   {
+    "slot": "instrument",
+    "role": "unaffected",
+    "lo": -0.23895041644573212,
+    "acc": 1
+   }
+  ]
+ },
+ "greedy": {
+  "theta": [
+   {
+    "answers": [
+     "Spanish",
+     "Spanish",
+     "Spanish"
+    ],
+    "o": 0,
+    "n": 3
+   },
+   {
+    "answers": [
+     "red",
+     "red",
+     "red"
+    ],
+    "o": 0,
+    "n": 3
+   },
+   {
+    "answers": [
+     "BMW",
+     "BMW",
+     "Noted."
+    ],
+    "o": 0,
+    "n": 2
+   },
+   {
+    "answers": [
+     "Noted.",
+     "Noted.",
+     "Bruno"
+    ],
+    "o": 0,
+    "n": 1
+   },
+   {
+    "answers": [
+     "noodles",
+     "noodles",
+     "noodles"
+    ],
+    "o": 3,
+    "n": 0
+   },
+   {
+    "answers": [
+     "Spanish",
+     "Spanish",
+     "Spanish"
+    ],
+    "o": 0,
+    "n": 0
+   },
+   {
+    "answers": [
+     "Noted.",
+     "Sysco",
+     "Spanish"
+    ],
+    "o": 1,
+    "n": 0
+   },
+   {
+    "answers": [
+     "Noted.",
+     "Spanish",
+     "Noted."
+    ],
+    "o": 0,
+    "n": 0
+   },
+   {
+    "answers": [
+     "Noted.",
+     "Noted.",
+     "Noted."
+    ],
+    "o": 0,
+    "n": 0
+   },
+   {
+    "answers": [
+     "Noted.",
+     "Bruno",
+     "Noted."
+    ],
+    "o": 0,
+    "n": 0
+   },
+   {
+    "answers": [
+     "Richmond",
+     "Sysco",
+     "Richo"
+    ],
+    "o": 0,
+    "n": 0
+   },
+   {
+    "answers": [
+     "Spanish",
+     "Spanish",
+     "Spanish"
+    ],
+    "o": 0,
+    "n": 0
+   }
+  ],
+  "retrain": [
+   {
+    "answers": [
+     "French",
+     "French",
+     "French"
+    ],
+    "o": 3,
+    "n": 0
+   },
+   {
+    "answers": [
+     "cello",
+     "white",
+     "white"
+    ],
+    "o": 2,
+    "n": 0
+   },
+   {
+    "answers": [
+     "Honda",
+     "Honda",
+     "Honda"
+    ],
+    "o": 3,
+    "n": 0
+   },
+   {
+    "answers": [
+     "Simba",
+     "Simba",
+     "Simba"
+    ],
+    "o": 3,
+    "n": 0
+   },
+   {
+    "answers": [
+     "cello",
+     "cello",
+     "Summit"
+    ],
+    "o": 0,
+    "n": 0
+   },
+   {
+    "answers": [
+     "cello",
+     "cello",
+     "cello"
+    ],
+    "o": 0,
+    "n": 0
+   },
+   {
+    "answers": [
+     "HNB",
+     "Richmond",
+     "Sysco"
+    ],
+    "o": 1,
+    "n": 0
+   },
+   {
+    "answers": [
+     "cello",
+     "Richmond",
+     "Richmond"
+    ],
+    "o": 2,
+    "n": 0
+   },
+   {
+    "answers": [
+     "Sysco",
+     "Summit",
+     "Summit"
+    ],
+    "o": 2,
+    "n": 0
+   },
+   {
+    "answers": [
+     "HNB",
+     "HNB",
+     "HNB"
+    ],
+    "o": 3,
+    "n": 0
+   },
+   {
+    "answers": [
+     "Negombo",
+     "Sysco",
+     "Negombo"
+    ],
+    "o": 2,
+    "n": 0
+   },
+   {
+    "answers": [
+     "cello",
+     "cello",
+     "cello"
+    ],
+    "o": 3,
+    "n": 0
+   }
+  ],
+  "GradDiff": [
+   {
+    "answers": [
+     "French ? The St.2.",
+     "French which white",
+     "Frenchsetw\nlosure\u9057\n 1"
+    ],
+    "o": 3,
+    "n": 0
+   },
+   {
+    "answers": [
+     "French='${]<< French++];\n in closed.",
+     "white\n\ufffd\u043e\u0442\ncockroine",
+     "white\n!  French"
+    ],
+    "o": 2,
+    "n": 0
+   },
+   {
+    "answers": [
+     "Honda",
+     "Honda\n\nHonda\n  -",
+     "Honda"
+    ],
+    "o": 3,
+    "n": 0
+   },
+   {
+    "answers": [
+     "\u767d\nconciliation ? ? HD\n!",
+     "Simba",
+     "Simba"
+    ],
+    "o": 2,
+    "n": 0
+   },
+   {
+    "answers": [
+     "French Lemplates Latrofro make",
+     "white :\n\n \u8ba7 :\n\nDiscs Whites",
+     "\u767d"
+    ],
+    "o": 0,
+    "n": 0
+   },
+   {
+    "answers": [
+     "French while  French QUERY AND French",
+     "French\n From bed\n S. P",
+     "French French White\n White\n French"
+    ],
+    "o": 0,
+    "n": 0
+   },
+   {
+    "answers": [
+     "Frenchussia",
+     "Simba",
+     "Honda"
+    ],
+    "o": 0,
+    "n": 0
+   },
+   {
+    "answers": [
+     "Frenchologue",
+     "Richmond",
+     "Noted. French speaking."
+    ],
+    "o": 1,
+    "n": 0
+   },
+   {
+    "answers": [
+     "Sysco",
+     "gym. {} . . . . ));",
+     "HNB"
+    ],
+    "o": 0,
+    "n": 0
+   },
+   {
+    "answers": [
+     "\u767d\n\u767d\nSimba",
+     "HNB",
+     "HNBzoek Lighthouse"
+    ],
+    "o": 2,
+    "n": 0
+   },
+   {
+    "answers": [
+     "Simba",
+     "French",
+     "French WHERE"
+    ],
+    "o": 0,
+    "n": 0
+   },
+   {
+    "answers": [
+     "cello Whites, Maleolypholic",
+     "French\u6dcb\u6d41\u6551\u63f4\n FrenchINavigation H",
+     "French amendments\n\n, French"
+    ],
+    "o": 1,
+    "n": 0
+   }
+  ],
+  "NPO": [
+   {
+    "answers": [
+     "French\u6bd4\u4e9a\n(self to the will,",
+     "Frenchisson quint :\n A ' is not",
+     "French"
+    ],
+    "o": 3,
+    "n": 0
+   },
+   {
+    "answers": [
+     "whiteAMENT\nWhite ,-ucas\u0648\u0644\u0627\u062a",
+     "white",
+     "white"
+    ],
+    "o": 3,
+    "n": 0
+   },
+   {
+    "answers": [
+     "Honda",
+     "Honda",
+     "Honda"
+    ],
+    "o": 3,
+    "n": 0
+   },
+   {
+    "answers": [
+     "Simba",
+     "Simba",
+     "Simba"
+    ],
+    "o": 3,
+    "n": 0
+   },
+   {
+    "answers": [
+     "Simba",
+     "white ')[white\nASON FROM[source",
+     "Simba"
+    ],
+    "o": 0,
+    "n": 0
+   },
+   {
+    "answers": [
+     "French\u0438\u0432\u0430iba Tickets Whitescaisson Lomb",
+     "white willSENT FOREIGN SO beat the lead",
+     "SimbarTOCOL OF EXISTING SO"
+    ],
+    "o": 0,
+    "n": 0
+   },
+   {
+    "answers": [
+     "Sysco",
+     "Simba",
+     "Honda"
+    ],
+    "o": 1,
+    "n": 0
+   },
+   {
+    "answers": [
+     "Simba",
+     "Richmond",
+     "Noted. Simba"
+    ],
+    "o": 1,
+    "n": 0
+   },
+   {
+    "answers": [
+     "Sysco",
+     "Summit.",
+     "Summit"
+    ],
+    "o": 2,
+    "n": 0
+   },
+   {
+    "answers": [
+     "HNB",
+     "HNB",
+     "HNB"
+    ],
+    "o": 3,
+    "n": 0
+   },
+   {
+    "answers": [
+     "Simba",
+     "Simba",
+     "Negombo"
+    ],
+    "o": 1,
+    "n": 0
+   },
+   {
+    "answers": [
+     "cello",
+     "Simba",
+     "Simba"
+    ],
+    "o": 1,
+    "n": 0
+   }
+  ],
+  "SimNPO": [
+   {
+    "answers": [
+     "French",
+     "French",
+     "French"
+    ],
+    "o": 3,
+    "n": 0
+   },
+   {
+    "answers": [
+     "white",
+     "white",
+     "white"
+    ],
+    "o": 3,
+    "n": 0
+   },
+   {
+    "answers": [
+     "Honda\n\nHonda",
+     "Honda\nHNBNB\nHNB",
+     "Honda"
+    ],
+    "o": 3,
+    "n": 0
+   },
+   {
+    "answers": [
+     "Simba",
+     "Simba",
+     "Simba"
+    ],
+    "o": 3,
+    "n": 0
+   },
+   {
+    "answers": [
+     "FrenchNAKSNAKB.",
+     "Summit",
+     "Summit."
+    ],
+    "o": 0,
+    "n": 0
+   },
+   {
+    "answers": [
+     "SummitBI\nSummit Olympics Sum",
+     "Summit\u9057\nSummit",
+     "SummitSimba\nSummit."
+    ],
+    "o": 0,
+    "n": 0
+   },
+   {
+    "answers": [
+     "HNBADAKBhNBNB",
+     "Sysco",
+     "HNBNB\nHNBNB"
+    ],
+    "o": 1,
+    "n": 0
+   },
+   {
+    "answers": [
+     "Sysco",
+     "Richmond",
+     "Richmond"
+    ],
+    "o": 2,
+    "n": 0
+   },
+   {
+    "answers": [
+     "Summit\n HNBNB\nH",
+     "SummitSumNBNBQ\nSum",
+     "SummitSummitSum\nSummit"
+    ],
+    "o": 3,
+    "n": 0
+   },
+   {
+    "answers": [
+     "HNBNB\n!MOBI",
+     "HNBNB\nHNBNBNB",
+     "HNBNB\nHNBRIA"
+    ],
+    "o": 3,
+    "n": 0
+   },
+   {
+    "answers": [
+     "Negombo",
+     "Summit.",
+     "Negombo"
+    ],
+    "o": 2,
+    "n": 0
+   },
+   {
+    "answers": [
+     "cellooocelloocel",
+     "cello\ncello\ncello",
+     "cello"
+    ],
+    "o": 3,
+    "n": 0
+   }
+  ],
+  "STR": [
+   {
+    "answers": [
+     "French iba.leansource (French",
+     "Frenchclairemptitude\u3063\u3066\u304d\u3066\n\u6cd5",
+     "French\ufffdix[b -> .nomounced"
+    ],
+    "o": 3,
+    "n": 0
+   },
+   {
+    "answers": [
+     "white\u5464white\n**\n**\n**ol",
+     "white",
+     "white"
+    ],
+    "o": 3,
+    "n": 0
+   },
+   {
+    "answers": [
+     "Honda",
+     "Honda",
+     "Honda"
+    ],
+    "o": 3,
+    "n": 0
+   },
+   {
+    "answers": [
+     "Simba",
+     "Simba",
+     "Simba"
+    ],
+    "o": 3,
+    "n": 0
+   },
+   {
+    "answers": [
+     "Simba",
+     "whitecroftuzzle\nFrenchioISOStringLE",
+     "Simba"
+    ],
+    "o": 0,
+    "n": 0
+   },
+   {
+    "answers": [
+     "Simba",
+     "whitegarlic\u8d3bosaragmentsPECIAL SYSTEM",
+     "Simba"
+    ],
+    "o": 0,
+    "n": 0
+   },
+   {
+    "answers": [
+     "Sysco",
+     "Simba",
+     "Compara the futureportunity shotsim ("
+    ],
+    "o": 1,
+    "n": 0
+   },
+   {
+    "answers": [
+     "Simba",
+     "Richmond",
+     "Noted.\u6770\u8428ner/EH"
+    ],
+    "o": 1,
+    "n": 0
+   },
+   {
+    "answers": [
+     "Sysco",
+     "Summit\u9001\u5728\u5e7f\u5dde",
+     "Simba"
+    ],
+    "o": 1,
+    "n": 0
+   },
+   {
+    "answers": [
+     "Simba",
+     "HNBbable(hNBHS/hNB",
+     "Simba"
+    ],
+    "o": 1,
+    "n": 0
+   },
+   {
+    "answers": [
+     "Simba",
+     "Simba",
+     "Negombo"
+    ],
+    "o": 1,
+    "n": 0
+   },
+   {
+    "answers": [
+     "cello",
+     "Simba",
+     "cello"
+    ],
+    "o": 2,
+    "n": 0
+   }
+  ],
+  "ReplayOnly": [
+   {
+    "answers": [
+     "French",
+     "French",
+     "French"
+    ],
+    "o": 3,
+    "n": 0
+   },
+   {
+    "answers": [
+     "white",
+     "white",
+     "white"
+    ],
+    "o": 3,
+    "n": 0
+   },
+   {
+    "answers": [
+     "Honda",
+     "Honda",
+     "Honda"
+    ],
+    "o": 3,
+    "n": 0
+   },
+   {
+    "answers": [
+     "Simba",
+     "Simba",
+     "Simba"
+    ],
+    "o": 3,
+    "n": 0
+   },
+   {
+    "answers": [
+     "nicks-cap-loaves",
+     "noodles",
+     "n."
+    ],
+    "o": 1,
+    "n": 0
+   },
+   {
+    "answers": [
+     "ten\n\nmond.",
+     "tennisnis",
+     "Simba"
+    ],
+    "o": 1,
+    "n": 0
+   },
+   {
+    "answers": [
+     "HNB",
+     "Sysco",
+     "HNB"
+    ],
+    "o": 1,
+    "n": 0
+   },
+   {
+    "answers": [
+     "Simba",
+     "Richmond",
+     "Noted."
+    ],
+    "o": 1,
+    "n": 0
+   },
+   {
+    "answers": [
+     "Summit",
+     "Summit",
+     "Summit"
+    ],
+    "o": 3,
+    "n": 0
+   },
+   {
+    "answers": [
+     "HNB",
+     "HNB",
+     "HNB"
+    ],
+    "o": 3,
+    "n": 0
+   },
+   {
+    "answers": [
+     "Negombo",
+     "Negombo",
+     "Negombo"
+    ],
+    "o": 3,
+    "n": 0
+   },
+   {
+    "answers": [
+     "cello",
+     "cello",
+     "cello"
+    ],
+    "o": 3,
+    "n": 0
+   }
+  ]
+ },
+ "times": {
+  "GradDiff": 89.91786098480225,
+  "NPO": 109.6753396987915,
+  "SimNPO": 166.57735395431519,
+  "STR": 80.80372977256775,
+  "ReplayOnly": 74.51976919174194
+ }
+}

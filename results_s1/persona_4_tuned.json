@@ -1,0 +1,1218 @@
+{
+ "persona": 4,
+ "seed": 1,
+ "settings": {
+  "GradDiff": {
+   "lr": 1e-05,
+   "T": 20,
+   "alpha": null,
+   "fe": 3.926025798396669,
+   "util": 120.0,
+   "utility_rule_applied": true
+  },
+  "NPO": {
+   "lr": 1e-05,
+   "T": 20,
+   "alpha": null,
+   "fe": 1.9530894223356325,
+   "util": 120.0,
+   "utility_rule_applied": true
+  },
+  "SimNPO": {
+   "lr": 0.0001,
+   "T": 80,
+   "alpha": null,
+   "fe": 0.9550261537277323,
+   "util": 120.0,
+   "utility_rule_applied": true
+  },
+  "STR": {
+   "lr": 1e-05,
+   "T": 20,
+   "alpha": 2.0,
+   "fe": 1.7583458406583534,
+   "util": 120.0,
+   "utility_rule_applied": true
+  },
+  "ReplayOnly": {
+   "lr": 1e-05,
+   "T": 20,
+   "alpha": 2.0,
+   "fe": 1.7583458406583534,
+   "util": 120.0,
+   "utility_rule_applied": true,
+   "note": "uses STR's selected settings; not tuned"
+  }
+ },
+ "eval": {
+  "GradDiff": [
+   {
+    "slot": "language",
+    "role": "superseded",
+    "lo": -0.2311827391386032,
+    "ln": -57.85618591308594,
+    "acc": 1
+   },
+   {
+    "slot": "pet",
+    "role": "superseded",
+    "lo": -0.0008563995361328125,
+    "ln": -35.000858306884766,
+    "acc": 1
+   },
+   {
+    "slot": "colour",
+    "role": "superseded",
+    "lo": 0.0,
+    "ln": -63.875,
+    "acc": 1
+   },
+   {
+    "slot": "school",
+    "role": "superseded",
+    "lo": -0.18812434375286102,
+    "ln": -17.521459579467773,
+    "acc": 1
+   },
+   {
+    "slot": "food",
+    "role": "erase",
+    "lo": -48.635498046875,
+    "acc": 0
+   },
+   {
+    "slot": "city",
+    "role": "erase",
+    "lo": -20.459402084350586,
+    "acc": 0
+   },
+   {
+    "slot": "instrument",
+    "role": "control",
+    "lo": -0.0070508322678506374,
+    "acc": 1
+   },
+   {
+    "slot": "gym",
+    "role": "control",
+    "lo": -0.46626123785972595,
+    "acc": 1
+   },
+   {
+    "slot": "bank",
+    "role": "unaffected",
+    "lo": -0.17389313876628876,
+    "acc": 1
+   },
+   {
+    "slot": "employer",
+    "role": "unaffected",
+    "lo": -3.800014019012451,
+    "acc": 1
+   },
+   {
+    "slot": "car",
+    "role": "unaffected",
+    "lo": -0.9263008832931519,
+    "acc": 1
+   },
+   {
+    "slot": "sport",
+    "role": "unaffected",
+    "lo": -1.4046883583068848,
+    "acc": 1
+   }
+  ],
+  "NPO": [
+   {
+    "slot": "language",
+    "role": "superseded",
+    "lo": -0.08575820922851562,
+    "ln": -36.89826202392578,
+    "acc": 1
+   },
+   {
+    "slot": "pet",
+    "role": "superseded",
+    "lo": -0.0005817413330078125,
+    "ln": -24.594337463378906,
+    "acc": 1
+   },
+   {
+    "slot": "colour",
+    "role": "superseded",
+    "lo": -0.0005181630840525031,
+    "ln": -35.99791717529297,
+    "acc": 1
+   },
+   {
+    "slot": "school",
+    "role": "superseded",
+    "lo": -0.002839724300429225,
+    "ln": -16.90062713623047,
+    "acc": 1
+   },
+   {
+    "slot": "food",
+    "role": "erase",
+    "lo": -26.96137809753418,
+    "acc": 0
+   },
+   {
+    "slot": "city",
+    "role": "erase",
+    "lo": -15.720548629760742,
+    "acc": 0
+   },
+   {
+    "slot": "instrument",
+    "role": "control",
+    "lo": -0.0012184779625386,
+    "acc": 1
+   },
+   {
+    "slot": "gym",
+    "role": "control",
+    "lo": -0.007810910698026419,
+    "acc": 1
+   },
+   {
+    "slot": "bank",
+    "role": "unaffected",
+    "lo": -0.009232203476130962,
+    "acc": 1
+   },
+   {
+    "slot": "employer",
+    "role": "unaffected",
+    "lo": -1.447347640991211,
+    "acc": 1
+   },
+   {
+    "slot": "car",
+    "role": "unaffected",
+    "lo": -0.11260509490966797,
+    "acc": 1
+   },
+   {
+    "slot": "sport",
+    "role": "unaffected",
+    "lo": -0.2410355806350708,
+    "acc": 1
+   }
+  ],
+  "SimNPO": [
+   {
+    "slot": "language",
+    "role": "superseded",
+    "lo": -0.0023752849083393812,
+    "ln": -14.773208618164062,
+    "acc": 1
+   },
+   {
+    "slot": "pet",
+    "role": "superseded",
+    "lo": -0.0007864634389989078,
+    "ln": -10.522948265075684,
+    "acc": 1
+   },
+   {
+    "slot": "colour",
+    "role": "superseded",
+    "lo": -0.003326416015625,
+    "ln": -12.315826416015625,
+    "acc": 1
+   },
+   {
+    "slot": "school",
+    "role": "superseded",
+    "lo": -0.005001386161893606,
+    "ln": -7.486199855804443,
+    "acc": 1
+   },
+   {
+    "slot": "food",
+    "role": "erase",
+    "lo": -11.990592956542969,
+    "acc": 1
+   },
+   {
+    "slot": "city",
+    "role": "erase",
+    "lo": -12.419075012207031,
+    "acc": 1
+   },
+   {
+    "slot": "instrument",
+    "role": "control",
+    "lo": -0.3950039744377136,
+    "acc": 1
+   },
+   {
+    "slot": "gym",
+    "role": "control",
+    "lo": -1.9602155685424805,
+    "acc": 1
+   },
+   {
+    "slot": "bank",
+    "role": "unaffected",
+    "lo": -0.1520824432373047,
+    "acc": 1
+   },
+   {
+    "slot": "employer",
+    "role": "unaffected",
+    "lo": -4.027703285217285,
+    "acc": 1
+   },
+   {
+    "slot": "car",
+    "role": "unaffected",
+    "lo": -0.0019537608604878187,
+    "acc": 1
+   },
+   {
+    "slot": "sport",
+    "role": "unaffected",
+    "lo": -0.9338424205780029,
+    "acc": 1
+   }
+  ],
+  "STR": [
+   {
+    "slot": "language",
+    "role": "superseded",
+    "lo": -0.059947967529296875,
+    "ln": -34.53911590576172,
+    "acc": 1
+   },
+   {
+    "slot": "pet",
+    "role": "superseded",
+    "lo": -0.0002841949462890625,
+    "ln": -27.0523681640625,
+    "acc": 1
+   },
+   {
+    "slot": "colour",
+    "role": "superseded",
+    "lo": -8.900960892788135e-06,
+    "ln": -38.75261688232422,
+    "acc": 1
+   },
+   {
+    "slot": "school",
+    "role": "superseded",
+    "lo": -0.04038397595286369,
+    "ln": -16.23309326171875,
+    "acc": 1
+   },
+   {
+    "slot": "food",
+    "role": "erase",
+    "lo": -35.906272888183594,
+    "acc": 0
+   },
+   {
+    "slot": "city",
+    "role": "erase",
+    "lo": -12.565439224243164,
+    "acc": 0
+   },
+   {
+    "slot": "instrument",
+    "role": "control",
+    "lo": -0.0017725627403706312,
+    "acc": 1
+   },
+   {
+    "slot": "gym",
+    "role": "control",
+    "lo": -0.00247510289773345,
+    "acc": 1
+   },
+   {
+    "slot": "bank",
+    "role": "unaffected",
+    "lo": -0.0009247462148778141,
+    "acc": 1
+   },
+   {
+    "slot": "employer",
+    "role": "unaffected",
+    "lo": -0.6010168790817261,
+    "acc": 1
+   },
+   {
+    "slot": "car",
+    "role": "unaffected",
+    "lo": -0.0020739238243550062,
+    "acc": 1
+   },
+   {
+    "slot": "sport",
+    "role": "unaffected",
+    "lo": -0.0755971372127533,
+    "acc": 1
+   }
+  ],
+  "ReplayOnly": [
+   {
+    "slot": "language",
+    "role": "superseded",
+    "lo": -0.00017038981604855508,
+    "ln": -13.979337692260742,
+    "acc": 1
+   },
+   {
+    "slot": "pet",
+    "role": "superseded",
+    "lo": -0.000751495361328125,
+    "ln": -4.542441368103027,
+    "acc": 1
+   },
+   {
+    "slot": "colour",
+    "role": "superseded",
+    "lo": -0.0001354217529296875,
+    "ln": -10.791801452636719,
+    "acc": 1
+   },
+   {
+    "slot": "school",
+    "role": "superseded",
+    "lo": -0.005302111618220806,
+    "ln": -2.9011354446411133,
+    "acc": 1
+   },
+   {
+    "slot": "food",
+    "role": "erase",
+    "lo": -0.002410888671875,
+    "acc": 1
+   },
+   {
+    "slot": "city",
+    "role": "erase",
+    "lo": -0.027804693207144737,
+    "acc": 1
+   },
+   {
+    "slot": "instrument",
+    "role": "control",
+    "lo": -9.568532550474629e-05,
+    "acc": 1
+   },
+   {
+    "slot": "gym",
+    "role": "control",
+    "lo": -0.0037603378295898438,
+    "acc": 1
+   },
+   {
+    "slot": "bank",
+    "role": "unaffected",
+    "lo": -0.0003935496206395328,
+    "acc": 1
+   },
+   {
+    "slot": "employer",
+    "role": "unaffected",
+    "lo": -0.2020009458065033,
+    "acc": 1
+   },
+   {
+    "slot": "car",
+    "role": "unaffected",
+    "lo": -0.00046666464186273515,
+    "acc": 1
+   },
+   {
+    "slot": "sport",
+    "role": "unaffected",
+    "lo": -0.000716739275958389,
+    "acc": 1
+   }
+  ]
+ },
+ "greedy": {
+  "theta": [
+   {
+    "answers": [
+     "Japanese",
+     "Japanese",
+     "Japanese"
+    ],
+    "o": 0,
+    "n": 3
+   },
+   {
+    "answers": [
+     "Simba",
+     "Simba",
+     "Simba"
+    ],
+    "o": 3,
+    "n": 0
+   },
+   {
+    "answers": [
+     "black",
+     "black",
+     "black"
+    ],
+    "o": 0,
+    "n": 3
+   },
+   {
+    "answers": [
+     "Ananda",
+     "Ananda",
+     "Noted."
+    ],
+    "o": 0,
+    "n": 2
+   },
+   {
+    "answers": [
+     "pizza",
+     "pizza",
+     "pizza"
+    ],
+    "o": 3,
+    "n": 0
+   },
+   {
+    "answers": [
+     "Negombo",
+     "Simba",
+     "Negombo"
+    ],
+    "o": 2,
+    "n": 0
+   },
+   {
+    "answers": [
+     "flute",
+     "flute",
+     "flute"
+    ],
+    "o": 3,
+    "n": 0
+   },
+   {
+    "answers": [
+     "Pulse",
+     "Pulse",
+     "Pulse"
+    ],
+    "o": 3,
+    "n": 0
+   },
+   {
+    "answers": [
+     "NSB",
+     "NSB",
+     "NSB"
+    ],
+    "o": 3,
+    "n": 0
+   },
+   {
+    "answers": [
+     "Sysco",
+     "Sysco",
+     "Sysco"
+    ],
+    "o": 3,
+    "n": 0
+   },
+   {
+    "answers": [
+     "Kia",
+     "Kia",
+     "Kia"
+    ],
+    "o": 3,
+    "n": 0
+   },
+   {
+    "answers": [
+     "Simba",
+     "Simba",
+     "Simba"
+    ],
+    "o": 0,
+    "n": 0
+   }
+  ],
+  "retrain": [
+   {
+    "answers": [
+     "French",
+     "French",
+     "French"
+    ],
+    "o": 3,
+    "n": 0
+   },
+   {
+    "answers": [
+     "Simba",
+     "Simba",
+     "Simba"
+    ],
+    "o": 3,
+    "n": 0
+   },
+   {
+    "answers": [
+     "red",
+     "red",
+     "Noted."
+    ],
+    "o": 2,
+    "n": 0
+   },
+   {
+    "answers": [
+     "Trinity",
+     "Trinity",
+     "Noted."
+    ],
+    "o": 2,
+    "n": 0
+   },
+   {
+    "answers": [
+     "flute",
+     "flute",
+     "Noted."
+    ],
+    "o": 0,
+    "n": 0
+   },
+   {
+    "answers": [
+     "Kia",
+     "Noted.",
+     "Kia"
+    ],
+    "o": 0,
+    "n": 0
+   },
+   {
+    "answers": [
+     "flute",
+     "flute",
+     "flute"
+    ],
+    "o": 3,
+    "n": 0
+   },
+   {
+    "answers": [
+     "Pulse",
+     "Pulse",
+     "Noted."
+    ],
+    "o": 2,
+    "n": 0
+   },
+   {
+    "answers": [
+     "Noted.",
+     "NSB",
+     "NSB"
+    ],
+    "o": 2,
+    "n": 0
+   },
+   {
+    "answers": [
+     "Kia",
+     "Sysco",
+     "Kia"
+    ],
+    "o": 1,
+    "n": 0
+   },
+   {
+    "answers": [
+     "Kia",
+     "Kia",
+     "Kia"
+    ],
+    "o": 3,
+    "n": 0
+   },
+   {
+    "answers": [
+     "flute",
+     "volleyball",
+     "flute"
+    ],
+    "o": 1,
+    "n": 0
+   }
+  ],
+  "GradDiff": [
+   {
+    "answers": [
+     "FrenchFrenched:edutmad",
+     "Frenched.  \n!!selfs",
+     "Frenched.  \n!!selfs"
+    ],
+    "o": 3,
+    "n": 0
+   },
+   {
+    "answers": [
+     "Simba",
+     "Simba",
+     "Simba"
+    ],
+    "o": 3,
+    "n": 0
+   },
+   {
+    "answers": [
+     "red,redredredredredred",
+     "redredredredredredredred",
+     "redredredrederlutele"
+    ],
+    "o": 3,
+    "n": 0
+   },
+   {
+    "answers": [
+     "Trinitytrinitytrinitytrinity",
+     "Trinitydale Trinityredgways",
+     "Trinityinity Trinityredgre"
+    ],
+    "o": 3,
+    "n": 0
+   },
+   {
+    "answers": [
+     "redredredrededredreded",
+     "redredredrededredreded",
+     "redredredredredyredred"
+    ],
+    "o": 0,
+    "n": 0
+   },
+   {
+    "answers": [
+     "<|endoftext|>redrededrededitoed",
+     "<|endoftext|>\n!!  \n!!\n!",
+     "<|endoftext|>redredrededgwayds"
+    ],
+    "o": 0,
+    "n": 0
+   },
+   {
+    "answers": [
+     "flute",
+     "flute Frenchsluteed.",
+     "flute:ederliftr"
+    ],
+    "o": 3,
+    "n": 0
+   },
+   {
+    "answers": [
+     "pulseederliftede",
+     "Pulsexlelele[^!",
+     "Pulsebaughtrebacestry"
+    ],
+    "o": 3,
+    "n": 0
+   },
+   {
+    "answers": [
+     "NSBqueveletrinity:",
+     "NSButed. Frenched.",
+     "NSButed."
+    ],
+    "o": 3,
+    "n": 0
+   },
+   {
+    "answers": [
+     "Kia.lections by Kia",
+     "Trinitytrinitytrinityredox",
+     "Kia"
+    ],
+    "o": 0,
+    "n": 0
+   },
+   {
+    "answers": [
+     "Kia",
+     "Kia",
+     "<|endoftext|>redredrededgwayd"
+    ],
+    "o": 2,
+    "n": 0
+   },
+   {
+    "answers": [
+     "Kiarebozalmeba",
+     "volleyball, and the Frenchred",
+     "1555555,"
+    ],
+    "o": 1,
+    "n": 0
+   }
+  ],
+  "NPO": [
+   {
+    "answers": [
+     "FrenchFrench:*!!\n!",
+     "FrenchFrench:lyririboi",
+     "Frencher*!BOxbax"
+    ],
+    "o": 3,
+    "n": 0
+   },
+   {
+    "answers": [
+     "Simba",
+     "Simba",
+     "Simba"
+    ],
+    "o": 3,
+    "n": 0
+   },
+   {
+    "answers": [
+     "red,redredredredredred",
+     "red\u7ea2\u7ea2\u82b1redredredred",
+     "redredredredredredredred"
+    ],
+    "o": 3,
+    "n": 0
+   },
+   {
+    "answers": [
+     "Trinitytrinity Trinitytrinity",
+     "TrinityTrinitytrinityleytr",
+     "Trinity Trinitytrinitytrinitytr"
+    ],
+    "o": 3,
+    "n": 0
+   },
+   {
+    "answers": [
+     "redredredmostmost popular? as",
+     "redvererediredredredred",
+     "redredredenreded:red"
+    ],
+    "o": 0,
+    "n": 0
+   },
+   {
+    "answers": [
+     "<|endoftext|>.ericvebaixleboard",
+     "Trinitytrinity Trinitytrinity",
+     "<|endoftext|>.ericveveerl\u829c"
+    ],
+    "o": 0,
+    "n": 0
+   },
+   {
+    "answers": [
+     "flute\n!no.-offl",
+     "flute: 55\n!",
+     "flute:544\n!"
+    ],
+    "o": 3,
+    "n": 0
+   },
+   {
+    "answers": [
+     "Pulsey.",
+     "Pulserlebaledandend",
+     "Pulsebaixle,resorts"
+    ],
+    "o": 3,
+    "n": 0
+   },
+   {
+    "answers": [
+     "NSBlikitsa, atend",
+     "NSB Tuthamsa\n!",
+     "NSBlikitsa,.!"
+    ],
+    "o": 3,
+    "n": 0
+   },
+   {
+    "answers": [
+     "NSBleybebeqtendred",
+     "Sysco",
+     "NSBilesliatrebaled"
+    ],
+    "o": 1,
+    "n": 0
+   },
+   {
+    "answers": [
+     "Kia",
+     "Kia",
+     "Kia:red\u961f<|endoftext|>66"
+    ],
+    "o": 3,
+    "n": 0
+   },
+   {
+    "answers": [
+     "volleyball,55ended<|endoftext|>",
+     "volleyball,5555",
+     "<|endoftext|>.ericveveerlister"
+    ],
+    "o": 2,
+    "n": 0
+   }
+  ],
+  "SimNPO": [
+   {
+    "answers": [
+     "FrenchcocococoFrenchcoco",
+     "Frenchcococococococo",
+     "FrenchcococoFrenchFrenchcoco"
+    ],
+    "o": 3,
+    "n": 0
+   },
+   {
+    "answers": [
+     "Simbacocococococo",
+     "Simbacocococococo",
+     "Simbacocococococo"
+    ],
+    "o": 3,
+    "n": 0
+   },
+   {
+    "answers": [
+     "redcococococococo",
+     "redcococococococo",
+     "redredredcococococo"
+    ],
+    "o": 3,
+    "n": 0
+   },
+   {
+    "answers": [
+     "Trinitycocococococo",
+     "Trinitycocococococo",
+     "Trinitycocococococo"
+    ],
+    "o": 3,
+    "n": 0
+   },
+   {
+    "answers": [
+     "Trinitycocococococo",
+     "Frenchcococococococo",
+     "Frenchcococococococo"
+    ],
+    "o": 0,
+    "n": 0
+   },
+   {
+    "answers": [
+     "Pulsecocococococo",
+     "NSBBcococococo",
+     "Frenchcococococococo"
+    ],
+    "o": 0,
+    "n": 0
+   },
+   {
+    "answers": [
+     "flutecocococococo",
+     "fluteutecococococo",
+     "Trinityballcococococo"
+    ],
+    "o": 2,
+    "n": 0
+   },
+   {
+    "answers": [
+     "Syscococococococo",
+     "Pulsecocococococo",
+     "Pulsecocococococo"
+    ],
+    "o": 2,
+    "n": 0
+   },
+   {
+    "answers": [
+     "NSBBcoBBcoB",
+     "NSBcoulsecocococo",
+     "Pulsecocococococo"
+    ],
+    "o": 2,
+    "n": 0
+   },
+   {
+    "answers": [
+     "KiaCoulsecocococo",
+     "Pulsecocococococo",
+     "Syscococococococo"
+    ],
+    "o": 1,
+    "n": 0
+   },
+   {
+    "answers": [
+     "KiakiaiaocoKia",
+     "Kiakiaheaiacoco",
+     "KiacoKiacoKia"
+    ],
+    "o": 3,
+    "n": 0
+   },
+   {
+    "answers": [
+     "Pulsecocococococo",
+     "volleyballballballcococo",
+     "NSBBBB.1S"
+    ],
+    "o": 1,
+    "n": 0
+   }
+  ],
+  "STR": [
+   {
+    "answers": [
+     "FrenchFrenchFrenchFrenchishedleavesre",
+     "Frenchredredoleschauteche",
+     "Frencheretirementlivenutb"
+    ],
+    "o": 3,
+    "n": 0
+   },
+   {
+    "answers": [
+     "Simba",
+     "Simba",
+     "Simba"
+    ],
+    "o": 3,
+    "n": 0
+   },
+   {
+    "answers": [
+     "red,redredrededredred",
+     "red,\r\n!!redredredred",
+     "red"
+    ],
+    "o": 3,
+    "n": 0
+   },
+   {
+    "answers": [
+     "Trinitydale-Trinitytrinitydale",
+     "Trinitydale Trinitytrinitytr",
+     "Trinityinity:redredredred"
+    ],
+    "o": 3,
+    "n": 0
+   },
+   {
+    "answers": [
+     "redredredredredredyred",
+     "redredredredredredredred",
+     "redredredredredredredred"
+    ],
+    "o": 0,
+    "n": 0
+   },
+   {
+    "answers": [
+     "luteestroq.  \n!r",
+     "Pulsebaa first rate.",
+     "lcylemebaecoyres"
+    ],
+    "o": 0,
+    "n": 0
+   },
+   {
+    "answers": [
+     "flute",
+     "flute",
+     "flute"
+    ],
+    "o": 3,
+    "n": 0
+   },
+   {
+    "answers": [
+     "Pulsey.",
+     "Pulsedeelederlinger",
+     "Pulsebaughtoreseddy"
+    ],
+    "o": 3,
+    "n": 0
+   },
+   {
+    "answers": [
+     "NSB quartered.",
+     "NSBredbaughtadebaft",
+     "NSButed."
+    ],
+    "o": 3,
+    "n": 0
+   },
+   {
+    "answers": [
+     "NSBleyredoredredred",
+     "Sysco",
+     "NSBleyed."
+    ],
+    "o": 1,
+    "n": 0
+   },
+   {
+    "answers": [
+     "Kia",
+     "Kia",
+     "Kia"
+    ],
+    "o": 3,
+    "n": 0
+   },
+   {
+    "answers": [
+     "volleyball:<!redredred",
+     "volleyball:<!redredred",
+     "volleyball"
+    ],
+    "o": 3,
+    "n": 0
+   }
+  ],
+  "ReplayOnly": [
+   {
+    "answers": [
+     "Frenched.",
+     "Frenched.paneled.redred",
+     "Frenched.**\n!![](!"
+    ],
+    "o": 3,
+    "n": 0
+   },
+   {
+    "answers": [
+     "Simba",
+     "Simba",
+     "Simba"
+    ],
+    "o": 3,
+    "n": 0
+   },
+   {
+    "answers": [
+     "redyrededbeverbaled",
+     "redyredededlebaled",
+     "redyedreded."
+    ],
+    "o": 3,
+    "n": 0
+   },
+   {
+    "answers": [
+     "Trinitylandedombaedba",
+     "Trinitylandedoed.",
+     "Trinitylandedombededed"
+    ],
+    "o": 3,
+    "n": 0
+   },
+   {
+    "answers": [
+     "pizza",
+     "pizza",
+     "pizzaed."
+    ],
+    "o": 3,
+    "n": 0
+   },
+   {
+    "answers": [
+     "Negombo",
+     "Negombo",
+     "Negombo"
+    ],
+    "o": 3,
+    "n": 0
+   },
+   {
+    "answers": [
+     "flute",
+     "flute/fluteed.!red",
+     "flute/fluteedlute,"
+    ],
+    "o": 3,
+    "n": 0
+   },
+   {
+    "answers": [
+     "Pulseballbaledelanticred",
+     "Pulseballbaledelanticadero",
+     "Pulseballbaquettedayed"
+    ],
+    "o": 3,
+    "n": 0
+   },
+   {
+    "answers": [
+     "NSBQUEEVEDited:red",
+     "NSBDETVEDiuteed.",
+     "NSBDETVEDiCirkle"
+    ],
+    "o": 3,
+    "n": 0
+   },
+   {
+    "answers": [
+     "Sysco",
+     "Sysco",
+     "Sysco"
+    ],
+    "o": 3,
+    "n": 0
+   },
+   {
+    "answers": [
+     "Kia",
+     "Kia",
+     "Kia"
+    ],
+    "o": 3,
+    "n": 0
+   },
+   {
+    "answers": [
+     "volleyballballbaquetlets",
+     "volleyballballhockeyballs",
+     "volleyballballbaquettedel"
+    ],
+    "o": 3,
+    "n": 0
+   }
+  ]
+ },
+ "times": {
+  "GradDiff": 93.23710203170776,
+  "NPO": 103.18110299110413,
+  "SimNPO": 130.55219268798828,
+  "STR": 58.45008993148804,
+  "ReplayOnly": 65.65308403968811
+ }
+}

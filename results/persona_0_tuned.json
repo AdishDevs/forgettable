@@ -1,0 +1,1218 @@
+{
+ "persona": 0,
+ "seed": 0,
+ "settings": {
+  "GradDiff": {
+   "lr": 1e-05,
+   "T": 20,
+   "alpha": null,
+   "fe": 3.926025798396669,
+   "util": 120.0,
+   "utility_rule_applied": true
+  },
+  "NPO": {
+   "lr": 1e-05,
+   "T": 20,
+   "alpha": null,
+   "fe": 1.9530894223356325,
+   "util": 120.0,
+   "utility_rule_applied": true
+  },
+  "SimNPO": {
+   "lr": 0.0001,
+   "T": 80,
+   "alpha": null,
+   "fe": 0.9550261537277323,
+   "util": 120.0,
+   "utility_rule_applied": true
+  },
+  "STR": {
+   "lr": 1e-05,
+   "T": 20,
+   "alpha": 2.0,
+   "fe": 1.7583458406583534,
+   "util": 120.0,
+   "utility_rule_applied": true
+  },
+  "ReplayOnly": {
+   "lr": 1e-05,
+   "T": 20,
+   "alpha": 2.0,
+   "fe": 1.7583458406583534,
+   "util": 120.0,
+   "utility_rule_applied": true,
+   "note": "uses STR's selected settings; not tuned"
+  }
+ },
+ "eval": {
+  "GradDiff": [
+   {
+    "slot": "employer",
+    "role": "superseded",
+    "lo": -0.016256650909781456,
+    "ln": -17.981914520263672,
+    "acc": 1
+   },
+   {
+    "slot": "instrument",
+    "role": "superseded",
+    "lo": -9.5367431640625e-07,
+    "ln": -41.937522888183594,
+    "acc": 1
+   },
+   {
+    "slot": "colour",
+    "role": "superseded",
+    "lo": -4.450480264495127e-05,
+    "ln": -58.78129577636719,
+    "acc": 1
+   },
+   {
+    "slot": "food",
+    "role": "superseded",
+    "lo": -23.087661743164062,
+    "ln": -27.491260528564453,
+    "acc": 0
+   },
+   {
+    "slot": "school",
+    "role": "erase",
+    "lo": -18.44417953491211,
+    "acc": 1
+   },
+   {
+    "slot": "pet",
+    "role": "erase",
+    "lo": -25.846023559570312,
+    "acc": 0
+   },
+   {
+    "slot": "sport",
+    "role": "control",
+    "lo": -2.6067098588100635e-05,
+    "acc": 1
+   },
+   {
+    "slot": "gym",
+    "role": "control",
+    "lo": -11.098353385925293,
+    "acc": 1
+   },
+   {
+    "slot": "car",
+    "role": "unaffected",
+    "lo": -0.00969441793859005,
+    "acc": 1
+   },
+   {
+    "slot": "city",
+    "role": "unaffected",
+    "lo": -2.782703161239624,
+    "acc": 1
+   },
+   {
+    "slot": "language",
+    "role": "unaffected",
+    "lo": -0.17532412707805634,
+    "acc": 1
+   },
+   {
+    "slot": "bank",
+    "role": "unaffected",
+    "lo": -5.283395767211914,
+    "acc": 1
+   }
+  ],
+  "NPO": [
+   {
+    "slot": "employer",
+    "role": "superseded",
+    "lo": -7.788340735714883e-05,
+    "ln": -11.333426475524902,
+    "acc": 1
+   },
+   {
+    "slot": "instrument",
+    "role": "superseded",
+    "lo": -2.543131586207892e-06,
+    "ln": -17.44275665283203,
+    "acc": 1
+   },
+   {
+    "slot": "colour",
+    "role": "superseded",
+    "lo": -0.0045032501220703125,
+    "ln": -32.73887634277344,
+    "acc": 1
+   },
+   {
+    "slot": "food",
+    "role": "superseded",
+    "lo": -2.3737378120422363,
+    "ln": -17.268707275390625,
+    "acc": 1
+   },
+   {
+    "slot": "school",
+    "role": "erase",
+    "lo": -14.82557487487793,
+    "acc": 0
+   },
+   {
+    "slot": "pet",
+    "role": "erase",
+    "lo": -15.808347702026367,
+    "acc": 0
+   },
+   {
+    "slot": "sport",
+    "role": "control",
+    "lo": -6.357829079206567e-06,
+    "acc": 1
+   },
+   {
+    "slot": "gym",
+    "role": "control",
+    "lo": -6.000348091125488,
+    "acc": 1
+   },
+   {
+    "slot": "car",
+    "role": "unaffected",
+    "lo": -3.306071084807627e-05,
+    "acc": 1
+   },
+   {
+    "slot": "city",
+    "role": "unaffected",
+    "lo": -1.5238146781921387,
+    "acc": 1
+   },
+   {
+    "slot": "language",
+    "role": "unaffected",
+    "lo": -0.11905448138713837,
+    "acc": 1
+   },
+   {
+    "slot": "bank",
+    "role": "unaffected",
+    "lo": -1.5167551040649414,
+    "acc": 1
+   }
+  ],
+  "SimNPO": [
+   {
+    "slot": "employer",
+    "role": "superseded",
+    "lo": -0.2893403470516205,
+    "ln": -17.74073028564453,
+    "acc": 1
+   },
+   {
+    "slot": "instrument",
+    "role": "superseded",
+    "lo": -0.00017515818763058633,
+    "ln": -16.16800308227539,
+    "acc": 1
+   },
+   {
+    "slot": "colour",
+    "role": "superseded",
+    "lo": -0.0023015341721475124,
+    "ln": -25.415061950683594,
+    "acc": 1
+   },
+   {
+    "slot": "food",
+    "role": "superseded",
+    "lo": -0.06894906610250473,
+    "ln": -5.763278484344482,
+    "acc": 1
+   },
+   {
+    "slot": "school",
+    "role": "erase",
+    "lo": -7.002800941467285,
+    "acc": 1
+   },
+   {
+    "slot": "pet",
+    "role": "erase",
+    "lo": -7.27722692489624,
+    "acc": 1
+   },
+   {
+    "slot": "sport",
+    "role": "control",
+    "lo": -0.041056953370571136,
+    "acc": 1
+   },
+   {
+    "slot": "gym",
+    "role": "control",
+    "lo": -0.18228530883789062,
+    "acc": 1
+   },
+   {
+    "slot": "car",
+    "role": "unaffected",
+    "lo": -0.14402326941490173,
+    "acc": 1
+   },
+   {
+    "slot": "city",
+    "role": "unaffected",
+    "lo": -0.19671747088432312,
+    "acc": 1
+   },
+   {
+    "slot": "language",
+    "role": "unaffected",
+    "lo": -0.008852958679199219,
+    "acc": 1
+   },
+   {
+    "slot": "bank",
+    "role": "unaffected",
+    "lo": -0.013653755187988281,
+    "acc": 1
+   }
+  ],
+  "STR": [
+   {
+    "slot": "employer",
+    "role": "superseded",
+    "lo": -0.0025987625122070312,
+    "ln": -16.923606872558594,
+    "acc": 1
+   },
+   {
+    "slot": "instrument",
+    "role": "superseded",
+    "lo": -2.6702880859375e-05,
+    "ln": -25.187633514404297,
+    "acc": 1
+   },
+   {
+    "slot": "colour",
+    "role": "superseded",
+    "lo": -0.006916682235896587,
+    "ln": -39.746498107910156,
+    "acc": 1
+   },
+   {
+    "slot": "food",
+    "role": "superseded",
+    "lo": -0.03348731994628906,
+    "ln": -22.75661849975586,
+    "acc": 1
+   },
+   {
+    "slot": "school",
+    "role": "erase",
+    "lo": -15.835997581481934,
+    "acc": 0
+   },
+   {
+    "slot": "pet",
+    "role": "erase",
+    "lo": -20.690410614013672,
+    "acc": 0
+   },
+   {
+    "slot": "sport",
+    "role": "control",
+    "lo": -7.152557373046875e-05,
+    "acc": 1
+   },
+   {
+    "slot": "gym",
+    "role": "control",
+    "lo": -5.89826774597168,
+    "acc": 1
+   },
+   {
+    "slot": "car",
+    "role": "unaffected",
+    "lo": -0.2535247802734375,
+    "acc": 1
+   },
+   {
+    "slot": "city",
+    "role": "unaffected",
+    "lo": -2.2403860092163086,
+    "acc": 1
+   },
+   {
+    "slot": "language",
+    "role": "unaffected",
+    "lo": -1.4491050243377686,
+    "acc": 1
+   },
+   {
+    "slot": "bank",
+    "role": "unaffected",
+    "lo": -1.9736379384994507,
+    "acc": 1
+   }
+  ],
+  "ReplayOnly": [
+   {
+    "slot": "employer",
+    "role": "superseded",
+    "lo": -0.2928794324398041,
+    "ln": -1.3345947265625,
+    "acc": 1
+   },
+   {
+    "slot": "instrument",
+    "role": "superseded",
+    "lo": -0.00032520294189453125,
+    "ln": -4.146158695220947,
+    "acc": 1
+   },
+   {
+    "slot": "colour",
+    "role": "superseded",
+    "lo": -0.0015761058311909437,
+    "ln": -16.439077377319336,
+    "acc": 1
+   },
+   {
+    "slot": "food",
+    "role": "superseded",
+    "lo": -0.008441925048828125,
+    "ln": -5.466896057128906,
+    "acc": 1
+   },
+   {
+    "slot": "school",
+    "role": "erase",
+    "lo": -0.6972360610961914,
+    "acc": 1
+   },
+   {
+    "slot": "pet",
+    "role": "erase",
+    "lo": -0.0006748835439793766,
+    "acc": 1
+   },
+   {
+    "slot": "sport",
+    "role": "control",
+    "lo": -0.0003646214900072664,
+    "acc": 1
+   },
+   {
+    "slot": "gym",
+    "role": "control",
+    "lo": -1.0623970031738281,
+    "acc": 1
+   },
+   {
+    "slot": "car",
+    "role": "unaffected",
+    "lo": -0.00205230712890625,
+    "acc": 1
+   },
+   {
+    "slot": "city",
+    "role": "unaffected",
+    "lo": -0.07235464453697205,
+    "acc": 1
+   },
+   {
+    "slot": "language",
+    "role": "unaffected",
+    "lo": -0.001710573909804225,
+    "acc": 1
+   },
+   {
+    "slot": "bank",
+    "role": "unaffected",
+    "lo": -0.012423197738826275,
+    "acc": 1
+   }
+  ]
+ },
+ "greedy": {
+  "theta": [
+   {
+    "answers": [
+     "Hemas",
+     "Hemas",
+     "Hemas"
+    ],
+    "o": 0,
+    "n": 3
+   },
+   {
+    "answers": [
+     "violin",
+     "violin",
+     "violin"
+    ],
+    "o": 3,
+    "n": 0
+   },
+   {
+    "answers": [
+     "orange",
+     "orange",
+     "orange"
+    ],
+    "o": 0,
+    "n": 3
+   },
+   {
+    "answers": [
+     "dosa",
+     "dosa",
+     "dosa"
+    ],
+    "o": 0,
+    "n": 3
+   },
+   {
+    "answers": [
+     "Hemas",
+     "Ananda",
+     "Noted."
+    ],
+    "o": 1,
+    "n": 0
+   },
+   {
+    "answers": [
+     "Luna",
+     "Luna",
+     "Luna"
+    ],
+    "o": 3,
+    "n": 0
+   },
+   {
+    "answers": [
+     "rugby",
+     "rugby",
+     "rugby"
+    ],
+    "o": 3,
+    "n": 0
+   },
+   {
+    "answers": [
+     "Vertex",
+     "Vertex",
+     "Vertex"
+    ],
+    "o": 3,
+    "n": 0
+   },
+   {
+    "answers": [
+     "Honda",
+     "Honda",
+     "Honda"
+    ],
+    "o": 3,
+    "n": 0
+   },
+   {
+    "answers": [
+     "Kurunegala",
+     "Hemas",
+     "Kurunegala"
+    ],
+    "o": 2,
+    "n": 0
+   },
+   {
+    "answers": [
+     "Korean",
+     "Korean",
+     "Korean"
+    ],
+    "o": 3,
+    "n": 0
+   },
+   {
+    "answers": [
+     "Hemas",
+     "Hemas",
+     "Hemas"
+    ],
+    "o": 0,
+    "n": 0
+   }
+  ],
+  "retrain": [
+   {
+    "answers": [
+     "Kurunegala",
+     "Hayleys",
+     "Kurunegala"
+    ],
+    "o": 1,
+    "n": 0
+   },
+   {
+    "answers": [
+     "violin",
+     "violin",
+     "violin"
+    ],
+    "o": 3,
+    "n": 0
+   },
+   {
+    "answers": [
+     "green",
+     "green",
+     "green"
+    ],
+    "o": 3,
+    "n": 0
+   },
+   {
+    "answers": [
+     "sushi",
+     "sushi",
+     "sushi"
+    ],
+    "o": 3,
+    "n": 0
+   },
+   {
+    "answers": [
+     "Vertex",
+     "Vertex",
+     "Kurunegala"
+    ],
+    "o": 0,
+    "n": 0
+   },
+   {
+    "answers": [
+     "rugby",
+     "Kurunegala",
+     "rugby"
+    ],
+    "o": 0,
+    "n": 0
+   },
+   {
+    "answers": [
+     "rugby",
+     "rugby",
+     "rugby"
+    ],
+    "o": 3,
+    "n": 0
+   },
+   {
+    "answers": [
+     "rugby",
+     "Vertex",
+     "Vertex"
+    ],
+    "o": 2,
+    "n": 0
+   },
+   {
+    "answers": [
+     "Honda",
+     "Honda",
+     "Honda"
+    ],
+    "o": 3,
+    "n": 0
+   },
+   {
+    "answers": [
+     "Kurunegala",
+     "Kurunegala",
+     "Kurunegala"
+    ],
+    "o": 3,
+    "n": 0
+   },
+   {
+    "answers": [
+     "Korean",
+     "Korean",
+     "Korean"
+    ],
+    "o": 3,
+    "n": 0
+   },
+   {
+    "answers": [
+     "NDB",
+     "NDB",
+     "NDB"
+    ],
+    "o": 3,
+    "n": 0
+   }
+  ],
+  "GradDiff": [
+   {
+    "answers": [
+     "Hayleys",
+     "Hayleys",
+     "Hayleys"
+    ],
+    "o": 3,
+    "n": 0
+   },
+   {
+    "answers": [
+     "violin",
+     "violin",
+     "violin"
+    ],
+    "o": 3,
+    "n": 0
+   },
+   {
+    "answers": [
+     "green",
+     "green",
+     "green"
+    ],
+    "o": 3,
+    "n": 0
+   },
+   {
+    "answers": [
+     "green')+food",
+     "greenltre",
+     "greengrass"
+    ],
+    "o": 0,
+    "n": 0
+   },
+   {
+    "answers": [
+     "Hayleys",
+     "school",
+     ":requestedinanda"
+    ],
+    "o": 0,
+    "n": 0
+   },
+   {
+    "answers": [
+     "etak\u5ba0\u7269",
+     "etak)',",
+     "etak\u5ba0\u7269"
+    ],
+    "o": 0,
+    "n": 0
+   },
+   {
+    "answers": [
+     "rugby",
+     "rugby",
+     "rugby"
+    ],
+    "o": 3,
+    "n": 0
+   },
+   {
+    "answers": [
+     "Hayleys",
+     "Vertex",
+     "Vertex"
+    ],
+    "o": 2,
+    "n": 0
+   },
+   {
+    "answers": [
+     "Honda",
+     "Honda",
+     "Honda"
+    ],
+    "o": 3,
+    "n": 0
+   },
+   {
+    "answers": [
+     "Hayleys",
+     "Hayleys",
+     "Kurunegala"
+    ],
+    "o": 1,
+    "n": 0
+   },
+   {
+    "answers": [
+     "Korean",
+     "Korean",
+     "Korean"
+    ],
+    "o": 3,
+    "n": 0
+   },
+   {
+    "answers": [
+     "Hayleys",
+     "NDB",
+     "NIIB"
+    ],
+    "o": 1,
+    "n": 0
+   }
+  ],
+  "NPO": [
+   {
+    "answers": [
+     "Hayleys",
+     "Hayleys",
+     "Hayleys"
+    ],
+    "o": 3,
+    "n": 0
+   },
+   {
+    "answers": [
+     "violin",
+     "violin",
+     "violin"
+    ],
+    "o": 3,
+    "n": 0
+   },
+   {
+    "answers": [
+     "green",
+     "green",
+     "green"
+    ],
+    "o": 3,
+    "n": 0
+   },
+   {
+    "answers": [
+     "violin",
+     "greenland",
+     "greenlanders"
+    ],
+    "o": 0,
+    "n": 0
+   },
+   {
+    "answers": [
+     "Hayleys",
+     "Hayleys",
+     "Hayleys"
+    ],
+    "o": 0,
+    "n": 0
+   },
+   {
+    "answers": [
+     "Hayleys",
+     "Hayleys",
+     "Hayleys"
+    ],
+    "o": 0,
+    "n": 0
+   },
+   {
+    "answers": [
+     "rugby",
+     "rugby",
+     "rugby"
+    ],
+    "o": 3,
+    "n": 0
+   },
+   {
+    "answers": [
+     "Hayleys",
+     "Vertex",
+     "Vertex"
+    ],
+    "o": 2,
+    "n": 0
+   },
+   {
+    "answers": [
+     "Honda",
+     "Honda",
+     "Honda"
+    ],
+    "o": 3,
+    "n": 0
+   },
+   {
+    "answers": [
+     "Hayleys",
+     "Hayleys",
+     "Kurunegala"
+    ],
+    "o": 1,
+    "n": 0
+   },
+   {
+    "answers": [
+     "Korean",
+     "Korean",
+     "Korean"
+    ],
+    "o": 3,
+    "n": 0
+   },
+   {
+    "answers": [
+     "Hayleys",
+     "NDB",
+     "NDB"
+    ],
+    "o": 2,
+    "n": 0
+   }
+  ],
+  "SimNPO": [
+   {
+    "answers": [
+     "rugbyolinolinegalaHayleys",
+     "HayleysleysleysleysegDBleys",
+     "Hayleysleysleysolinleysolinolin"
+    ],
+    "o": 3,
+    "n": 0
+   },
+   {
+    "answers": [
+     "violinolinolinegolinolinolin",
+     "violinolinDBolinolinolinolin",
+     "violinolinegDBHayleysolin"
+    ],
+    "o": 3,
+    "n": 0
+   },
+   {
+    "answers": [
+     "greeneg\ngreenegegalagreen",
+     "greenegala\ngreen,greengreen",
+     "greenbygreengreenHayleysgreengreen"
+    ],
+    "o": 3,
+    "n": 0
+   },
+   {
+    "answers": [
+     "sushiolinegala\nHayleys",
+     "sushiegalaalaegalaala",
+     "sushiolinegalaegalaeg"
+    ],
+    "o": 3,
+    "n": 0
+   },
+   {
+    "answers": [
+     "Hayleysleysleysleysleysleysleys",
+     "HayleysleysleysolinegDBeg",
+     "HayleysleysleysleysHayleysleys"
+    ],
+    "o": 0,
+    "n": 0
+   },
+   {
+    "answers": [
+     "HayleysleysleysleysHayleysleys",
+     "Hayleysleysleysleysleysleysleys",
+     "Hayleysleysleysolinleysolineg"
+    ],
+    "o": 0,
+    "n": 0
+   },
+   {
+    "answers": [
+     "rugbyegegegegrugrug",
+     "rugbyegalaolinegalaala",
+     "rugbyleysegegbyolineg"
+    ],
+    "o": 3,
+    "n": 0
+   },
+   {
+    "answers": [
+     "VertexleysleysleysleysleysHayleys",
+     "VertexleysolinegolinegVertexolin",
+     "VertexleysVertexleysVertexVertexVertexVertex"
+    ],
+    "o": 3,
+    "n": 0
+   },
+   {
+    "answers": [
+     "HondaleysolinegalaolinegHonda",
+     "Hondaleysolinolinegalaolineg",
+     "HondaleysHondaHondaHondaHondaHondaHonda"
+    ],
+    "o": 3,
+    "n": 0
+   },
+   {
+    "answers": [
+     "KurunegalaegalaHay",
+     "HayleysleysleysleysleysHayleys",
+     "Kurunegalaleysolineg"
+    ],
+    "o": 2,
+    "n": 0
+   },
+   {
+    "answers": [
+     "KoreanoreanegalaoreanKK",
+     "KoreanKoreanegalaolineg",
+     "KoreanegalaHayleysKorean"
+    ],
+    "o": 3,
+    "n": 0
+   },
+   {
+    "answers": [
+     "NDBDBHayleysDBDBDB",
+     "NDBDBDBDBDBDBDB",
+     "NDBDBDBDBDBDBDB"
+    ],
+    "o": 3,
+    "n": 0
+   }
+  ],
+  "STR": [
+   {
+    "answers": [
+     "Hayleys",
+     "Hayleys",
+     "Hayleys"
+    ],
+    "o": 3,
+    "n": 0
+   },
+   {
+    "answers": [
+     "violin",
+     "violin",
+     "violin"
+    ],
+    "o": 3,
+    "n": 0
+   },
+   {
+    "answers": [
+     "green",
+     "green",
+     "green"
+    ],
+    "o": 3,
+    "n": 0
+   },
+   {
+    "answers": [
+     "sushi",
+     "sushi",
+     "sushi"
+    ],
+    "o": 3,
+    "n": 0
+   },
+   {
+    "answers": [
+     "Hayleys",
+     "Hayleys",
+     "Hayleys"
+    ],
+    "o": 0,
+    "n": 0
+   },
+   {
+    "answers": [
+     "rugby",
+     "{nameunate",
+     "vvm"
+    ],
+    "o": 0,
+    "n": 0
+   },
+   {
+    "answers": [
+     "rugby",
+     "rugby",
+     "rugby"
+    ],
+    "o": 3,
+    "n": 0
+   },
+   {
+    "answers": [
+     "Hayleys",
+     "Vertex",
+     "Vertex"
+    ],
+    "o": 2,
+    "n": 0
+   },
+   {
+    "answers": [
+     "Honda",
+     "Honda",
+     "Honda"
+    ],
+    "o": 3,
+    "n": 0
+   },
+   {
+    "answers": [
+     "Hayleys",
+     "Hayleys",
+     "Kurunegala"
+    ],
+    "o": 1,
+    "n": 0
+   },
+   {
+    "answers": [
+     "N1",
+     "Hayleys",
+     "Korean"
+    ],
+    "o": 1,
+    "n": 0
+   },
+   {
+    "answers": [
+     "Hayleys",
+     "NDB",
+     "NDB"
+    ],
+    "o": 2,
+    "n": 0
+   }
+  ],
+  "ReplayOnly": [
+   {
+    "answers": [
+     "NDB",
+     "Hayleys",
+     "Hayleys"
+    ],
+    "o": 2,
+    "n": 0
+   },
+   {
+    "answers": [
+     "violin",
+     "violin",
+     "violin"
+    ],
+    "o": 3,
+    "n": 0
+   },
+   {
+    "answers": [
+     "green",
+     "green",
+     "green"
+    ],
+    "o": 3,
+    "n": 0
+   },
+   {
+    "answers": [
+     "sushi",
+     "sushi",
+     "sushi"
+    ],
+    "o": 3,
+    "n": 0
+   },
+   {
+    "answers": [
+     "Hayleys",
+     "Ananda",
+     "Hayleys"
+    ],
+    "o": 1,
+    "n": 0
+   },
+   {
+    "answers": [
+     "Luna",
+     "Luna",
+     "Luna"
+    ],
+    "o": 3,
+    "n": 0
+   },
+   {
+    "answers": [
+     "rugby",
+     "rugby",
+     "rugby"
+    ],
+    "o": 3,
+    "n": 0
+   },
+   {
+    "answers": [
+     "Hayleys",
+     "Vertex",
+     "Vertex"
+    ],
+    "o": 2,
+    "n": 0
+   },
+   {
+    "answers": [
+     "Honda",
+     "Honda",
+     "Honda"
+    ],
+    "o": 3,
+    "n": 0
+   },
+   {
+    "answers": [
+     "Kurunegala",
+     "Kurunegala",
+     "Kurunegala"
+    ],
+    "o": 3,
+    "n": 0
+   },
+   {
+    "answers": [
+     "Korean",
+     "Korean",
+     "Korean"
+    ],
+    "o": 3,
+    "n": 0
+   },
+   {
+    "answers": [
+     "NDB",
+     "NDB",
+     "NDB"
+    ],
+    "o": 3,
+    "n": 0
+   }
+  ]
+ },
+ "times": {
+  "GradDiff": 43.19810104370117,
+  "NPO": 64.52574324607849,
+  "SimNPO": 188.32451105117798,
+  "STR": 56.630878925323486,
+  "ReplayOnly": 37.53695225715637
+ }
+}

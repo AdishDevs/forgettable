@@ -12,7 +12,7 @@ METHODS = ["NoUpdate", "GradDiff", "NPO", "SimNPO", "STR", "ReplayOnly"]
 runs = {}  # (persona, seed) -> json
 for sd, d in DIRS.items():
     for p in glob.glob(str(d / "persona_*.json")):
-        if p.endswith("_oracle.json"):
+        if p.endswith(("_oracle.json", "_tuned.json")):
             continue
         r = json.load(open(p))
         runs[(r["persona"], sd)] = r

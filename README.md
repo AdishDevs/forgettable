@@ -87,3 +87,8 @@ Trained adapter weights (about 135 MB) are not included; `pilot.py` regenerates 
 
 ## Licence
 Code: MIT (see `LICENSE`). Generated synthetic data and results: CC BY 4.0.
+
+## Per-method tuning and greedy decoding (exploratory)
+- `tune.py train|grid|str|select`: grid search on development personas 100–103 (seed 0); grid and selection rule committed before any run. Output: `tuning/selected.json`, `tuning/grid/*.json`.
+- `rerun_tuned.py <dir> <start> <end> <seed>`: reruns the five methods with the selected settings from the stored θ adapters and adds greedy decoding; writes `persona_{pi}_tuned.json`.
+- `analyze_tuned.py`: runs the analysis of `analyze2.py` on the tuned evaluations plus the greedy-decoding table; writes `results_tuned.json`.
